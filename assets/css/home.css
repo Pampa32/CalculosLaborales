@@ -1,0 +1,65 @@
+/* home.css — estilos específicos de la portada */
+
+/* Intro banner (home) */
+.intro {
+  padding: 48px 20px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1000px 600px at 50% -8%, rgba(37, 99, 235, .2), transparent 58%),
+    radial-gradient(900px 500px at 20% 15%, rgba(14, 165, 233, .15), transparent 52%),
+    radial-gradient(1100px 700px at 80% 100%, rgba(59, 130, 246, .1), transparent 60%),
+    linear-gradient(180deg, #f0f6ff 0%, #eaf2ff 100%);
+}
+
+.intro-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid rgba(37, 99, 235, .15);
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, .08);
+}
+
+.intro-title {
+  margin: 10px 0 10px;
+  font-size: clamp(36px, 7vw, 72px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.intro-title span {
+  display: block;
+  margin-top: 6px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9, #2563eb);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: none;
+}
+
+.intro-sub {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--muted);
+  font-weight: 500;
+}
