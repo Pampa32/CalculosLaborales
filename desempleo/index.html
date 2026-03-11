@@ -36,7 +36,7 @@
 <link href="../assets/css/components.css?v=20260310" rel="stylesheet"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Cálculos Laborales","url":"https://calculoslaborales.es/","logo":"https://calculoslaborales.es/assets/icons/nombre-trans.png","image":"https://calculoslaborales.es/assets/icons/og-image.png"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":{"@id":"https://calculoslaborales.es/"}},{"@type":"ListItem","position":2,"name":"Desempleo y paro en España (2026) — Guías y calculadoras","item":{"@id":"https://calculoslaborales.es/desempleo/"}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Esto es oficial del SEPE?","acceptedAnswer":{"@type":"Answer","text":"No. Son cálculos orientativos para tener una referencia rápida. Las condiciones y topes pueden cambiar: para cifras oficiales, consulta SEPE o tu expediente."}},{"@type":"Question","name":"¿Qué dato necesito para calcular el paro?","acceptedAnswer":{"@type":"Answer","text":"La calculadora usa la base reguladora mensual como referencia. Si no la tienes, puedes aproximarla con tu nómina o con tu base de cotización."}},{"@type":"Question","name":"¿La duración depende de los días cotizados?","acceptedAnswer":{"@type":"Answer","text":"Sí. La duración se calcula con los días cotizados en los últimos 6 años. Nuestra herramienta te da la equivalencia de forma rápida."}},{"@type":"Question","name":"¿Qué cambios hay en 2026 para el paro?","acceptedAnswer":{"@type":"Answer","text":"En 2026, hay actualizaciones en cuantías máximas, bases reguladoras, cambios en subsidios y nuevas compatibilidades. Revisa la sección dedicada para detalles."}},{"@type":"Question","name":"¿Puedo trabajar mientras cobro paro?","acceptedAnswer":{"@type":"Answer","text":"En algunos casos sí, especialmente con trabajo parcial. La compatibilidad depende de la jornada, el contrato y si lo comunicas al SEPE. Consulta la guía dedicada."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Esto es oficial del SEPE?","acceptedAnswer":{"@type":"Answer","text":"No. Son cálculos orientativos para tener una referencia rápida. Las condiciones y topes pueden cambiar: para cifras oficiales, consulta el SEPE o tu expediente."}},{"@type":"Question","name":"¿Qué dato necesito para calcular el paro?","acceptedAnswer":{"@type":"Answer","text":"La calculadora usa la base reguladora mensual como referencia. Si no la tienes, puedes aproximarla con tu nómina o con tu base de cotización de los últimos 6 meses."}},{"@type":"Question","name":"¿La duración depende de los días cotizados?","acceptedAnswer":{"@type":"Answer","text":"Sí. La duración se calcula con los días cotizados en los últimos 6 años (mínimo 360 días para 120 días de paro, máximo 2.160+ días para 720 días). Nuestra herramienta te da la equivalencia de forma rápida."}},{"@type":"Question","name":"¿Qué cambios hay en 2026 para el paro?","acceptedAnswer":{"@type":"Answer","text":"En 2026 se han actualizado las cuantías máximas y mínimas (topes), hay ajustes en subsidios y en algunas compatibilidades. Consulta la guía de cambios laborales 2026 para detalles."}},{"@type":"Question","name":"¿Puedo trabajar mientras cobro paro?","acceptedAnswer":{"@type":"Answer","text":"En algunos casos sí, especialmente con trabajo parcial. La compatibilidad depende de la jornada, el contrato y si lo comunicas al SEPE. La prestación se reduce proporcionalmente. Consulta la guía dedicada."}},{"@type":"Question","name":"¿Cuánto se cobra de paro exactamente?","acceptedAnswer":{"@type":"Answer","text":"La prestación contributiva equivale al 70% de la base reguladora los primeros 180 días y al 60% desde el día 181. Siempre dentro de topes mínimos (~570 €/mes sin hijos) y máximos (~1.245 €/mes sin hijos, más con hijos) vigentes en 2026."}}]}</script>
 <!-- Google Analytics + Consent Mode (default denied) -->
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -213,7 +213,7 @@
 <p>Es la media mensual de tu salario en los últimos 180 días cotizados (normalmente, tus últimos 6 meses). Sirve para calcular la cuantía de la prestación. No es lo mismo que el salario bruto.</p>
 
 <h3>Cuantía de la prestación</h3>
-<p>Es el dinero mensual que recibes si cumples requisitos. Se calcula como un porcentaje de la base reguladora (típicamente 70-80% los primeros meses, luego 50%). Tiene tope máximo y mínimo.</p>
+<p>Es el dinero mensual que recibes si cumples requisitos. Se calcula como un porcentaje de la base reguladora: <strong>70% los primeros 180 días</strong> y <strong>60% desde el día 181</strong>. Tiene tope máximo y mínimo según cargas familiares.</p>
 
 <h3>Duración de la prestación</h3>
 <p>Los meses (o días) que recibirás paro. Se calcula según los días cotizados en los últimos 6 años. A más días cotizados, más tiempo de prestación (máximo 720 días).</p>
@@ -278,30 +278,42 @@
 
 <section aria-label="Preguntas frecuentes" class="faq">
 <h3>Preguntas frecuentes</h3>
+<div class="card">
 <details>
 <summary>¿Esto es oficial del SEPE?</summary>
 <p>No. Son cálculos orientativos para tener una referencia rápida. Las condiciones y topes pueden cambiar: para cifras oficiales, consulta SEPE o tu expediente.</p>
 </details>
+</div>
+<div class="card">
 <details>
 <summary>¿Qué dato necesito para calcular el paro?</summary>
 <p>La calculadora usa la <strong>base reguladora mensual</strong> como referencia. Si no la tienes, puedes aproximarla con tu nómina o con tu base de cotización.</p>
 </details>
+</div>
+<div class="card">
 <details>
 <summary>¿La duración depende de los días cotizados?</summary>
 <p>Sí. La duración se calcula con los días cotizados en los últimos 6 años. Nuestra herramienta te da la equivalencia de forma rápida.</p>
 </details>
+</div>
+<div class="card">
 <details>
 <summary>¿Qué cambios hay en 2026 para el paro?</summary>
 <p>En 2026, hay actualizaciones en cuantías máximas, bases reguladoras, cambios en subsidios y nuevas compatibilidades. Revisa la sección dedicada para detalles.</p>
 </details>
+</div>
+<div class="card">
 <details>
 <summary>¿Puedo trabajar mientras cobro paro?</summary>
 <p>En algunos casos sí, especialmente con trabajo parcial. La compatibilidad depende de la jornada, el contrato y si lo comunicas al SEPE. Consulta la <a href="/guia/trabajar-mientras-cobras-el-paro.html">guía dedicada</a>.</p>
 </details>
+</div>
+<div class="card">
 <details>
 <summary>¿Qué pasa si tengo una devolución de cuota?</summary>
 <p>Al salir de un trabajo, el empresario suele tramitar una devolución de cuota (~50% del mes). Es dinero que recibirás como anticipo y que se descuenta de los primeros pagos de paro.</p>
 </details>
+</div>
 </section>
 <section class="section-block">
 <div class="content">
@@ -348,7 +360,10 @@
 <a href="/legal/privacidad.html">Privacidad</a>
 <a href="/legal/cookies.html">Cookies</a>
 <a href="/legal/sobre-nosotros.html">Sobre nosotros</a>
-<a href="/legal/metodologia-calculos.html">Metodología</a>
+</div>
+<div class="footer-section">
+<h3>Metodología</h3>
+<a href="/legal/sobre-nosotros.html">Cómo hacemos nuestros cálculos</a>
 </div>
 </div>
 <div class="footer-bottom">
