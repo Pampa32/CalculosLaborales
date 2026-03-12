@@ -162,7 +162,7 @@
   }
 
   .brand {
-    width: 50% !important;
+    width: 44% !important;
     padding-left: 10px;
   }
 }
@@ -332,6 +332,7 @@
 @media (max-width: 860px) {
   .header .nav .dropdown {
     width: 100%;
+    display: block;
   }
 
   .header .nav .dropdown > .nav-dropdown {
@@ -347,8 +348,10 @@
     transform: none !important;
     width: 100% !important;
     min-width: 0 !important;
-    max-height: none !important;
-    overflow-y: visible !important;
+    max-height: min(52dvh, 360px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     margin-top: 6px;
     padding: 8px;
   }
@@ -360,6 +363,23 @@
     padding: 10px 12px;
     border-radius: 12px;
   }
+
+  /* Stability override: keep submenu in normal flow under "Guías" */
+  .header .nav {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+  }
+
+  .header .nav .nav-item {
+    width: 100%;
+  }
+
+  .header .nav .dropdown.open .dropdown-menu {
+    display: block;
+    position: static !important;
+    width: 100% !important;
+  }
 }
 
 .brand {
@@ -368,7 +388,9 @@
   gap: 10px;
   font-weight: 800;
   letter-spacing: .2px;
-  width: 17%;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: min(360px, 42vw);
 }
 
 .brand-badge {
@@ -405,8 +427,21 @@
 }
 
 #logotipo{
-height:50px;
-width:100%;
+  height: 54px;
+  width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 860px) {
+  #logotipo {
+    height: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logotipo {
+    height: 36px;
+  }
 }
 
 /* Guías en header */
