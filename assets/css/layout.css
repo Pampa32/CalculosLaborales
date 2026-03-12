@@ -312,6 +312,12 @@
   background: rgba(15, 23, 42, .06);
 }
 
+.menu-divider {
+  margin: 8px 0;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+
 @media (max-width: 720px) {
   .header-inner {
     padding: 10px 12px;
