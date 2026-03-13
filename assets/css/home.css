@@ -173,6 +173,37 @@
   color: var(--muted);
 }
 
+.search-filters {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0 4px;
+}
+
+.search-filter {
+  border: 1px solid rgba(15, 23, 42, .14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .8);
+  color: var(--muted);
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+
+.search-filter.active,
+.search-filter:hover {
+  border-color: #2563eb;
+  background: #eef4ff;
+  color: #1e3a8a;
+}
+
+.search-result-link.is-active {
+  border-color: #2563eb;
+  background: #eef4ff;
+  outline: none;
+}
+
 .search-chips {
   margin-top: 12px;
   display: flex;
