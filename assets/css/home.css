@@ -57,7 +57,7 @@
   display: block;
   margin-top: var(--home-s1);
   font-weight: 800;
-  background: linear-gradient(90deg, #2563eb, #0ea5e9, #2563eb);
+  background: linear-gradient(90deg, #2f63bf, #2b84d8, #2f63bf);
   background-size: 200% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -120,7 +120,7 @@
 }
 
 .search-quick-links {
-  margin-top: var(--home-s2);
+  margin-top: calc(var(--home-s2) + var(--home-s1));
   display: flex;
   flex-wrap: wrap;
   gap: var(--home-s1);
@@ -129,12 +129,12 @@
 .search-quick-link {
   display: inline-flex;
   align-items: center;
-  padding: 7px 11px;
+  padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid rgba(37, 99, 235, .2);
   background: rgba(255, 255, 255, .9);
   color: #1e3a8a;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-decoration: none;
   transition: all .15s ease;
@@ -143,6 +143,8 @@
 .search-quick-link:hover {
   border-color: rgba(37, 99, 235, .45);
   background: #eef4ff;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, .14);
+  transform: translateY(-1px);
 }
 
 .search-input-wrap {
