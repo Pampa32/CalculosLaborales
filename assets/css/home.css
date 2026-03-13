@@ -264,6 +264,43 @@
   line-height: 1.6;
 }
 
+#empieza .card-kicker {
+  margin: 0 0 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, .1);
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+#empieza .card-kpi {
+  margin: 0 0 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .78);
+  border: 1px solid rgba(37, 99, 235, .16);
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#empieza .card-kpi strong {
+  color: #1e3a8a;
+}
+
+#empieza .card-actions {
+  gap: 8px;
+}
+
+#empieza .card-actions .btn-primary {
+  min-width: 132px;
+}
+
 @media (max-width: 640px) {
   .search-shell {
     padding: 16px;
@@ -304,6 +341,11 @@
   .card p {
     font-size: 15px;
     line-height: 1.55;
+  }
+
+  #empieza .card-kpi {
+    font-size: 13px;
+    padding: 7px 9px;
   }
 
   .search-result-link {
