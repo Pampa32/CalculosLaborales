@@ -2,7 +2,7 @@
 
 /* Intro banner (home) */
 .intro {
-  padding: 48px 20px 20px;
+  padding: 44px 20px 14px;
   text-align: center;
   position: relative;
 }
@@ -56,16 +56,16 @@
 }
 
 .intro-sub {
-  max-width: 780px;
+  max-width: 720px;
   margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.55;
   color: var(--muted);
   font-weight: 500;
 }
 
 .search-hub {
-  margin: 14px 0 22px;
+  margin: 12px 0 8px;
 }
 
 .search-shell {
@@ -98,6 +98,12 @@
 .search-shell > p {
   margin: 0 0 12px;
   color: var(--muted);
+}
+
+.search-primary-action {
+  margin-top: 10px;
+  min-height: 42px;
+  width: fit-content;
 }
 
 .search-input-wrap {
