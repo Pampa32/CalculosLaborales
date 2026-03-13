@@ -9,6 +9,10 @@
   flex: 1;
 }
 
+.legal-page .container {
+  padding-bottom: 18px;
+}
+
 /* Header */
 
 .header {
