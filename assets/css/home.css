@@ -277,6 +277,7 @@
 .section-block {
   margin-top: var(--home-s6);
   margin-bottom: var(--home-s6);
+  padding-bottom: var(--home-s3);
   background: rgba(255, 255, 255, .36);
   border: 1px solid rgba(37, 99, 235, .1);
   box-shadow: 0 8px 20px rgba(15, 23, 42, .03);
@@ -355,6 +356,10 @@
   .search-quick-link {
     font-size: 12px;
     padding: 6px 10px;
+  }
+
+  .section-block {
+    padding-bottom: var(--home-s2);
   }
 
   .intro-title {
