@@ -195,6 +195,13 @@
                               placeholder="Ej: finiquito, IRPF, vacaciones, paro, jubilación..." type="search" />
                     </div>
                     <a class="btn btn-primary search-primary-action" href="/tools/sueldo-neto.html">Empezar por sueldo neto</a>
+                    <div class="search-quick-links" id="homeSearchQuickLinks" aria-label="Enlaces rápidos">
+                         <a class="search-quick-link" href="/tools/finiquito.html">Finiquito</a>
+                         <a class="search-quick-link" href="/tools/calculadora-paro.html">Paro</a>
+                         <a class="search-quick-link" href="/tools/calculadora-irpf-nomina.html">IRPF nómina</a>
+                         <a class="search-quick-link" href="/guia/paro-en-espana-guia-completa.html">Guía paro</a>
+                         <a class="search-quick-link" href="/autonomos/">Autónomos</a>
+                    </div>
                     <div aria-live="polite" class="search-results" id="homeSearchResults"></div>
                </div>
           </section>
@@ -660,7 +667,7 @@
      <script>
           const _yEl = document.getElementById('y'); if (_yEl) _yEl.textContent = new Date().getFullYear();
      </script>
-     <script defer src="/assets/js/home-search.min.js?v=20260313"></script>
+     <script defer src="/assets/js/home-search.min.js?v=20260313b"></script>
      <script>
           (function trackToolCtas() {
                if (typeof document === 'undefined') return;
