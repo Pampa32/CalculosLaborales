@@ -66,12 +66,12 @@
 }
 
 .intro-sub {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0 auto;
-  font-size: clamp(17px, 1.7vw, 20px);
-  line-height: 1.6;
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.52;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .search-hub {
