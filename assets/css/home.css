@@ -90,10 +90,16 @@
   position: relative;
 }
 
-.search-free-pill {
+.search-trust-pills {
   position: absolute;
   top: var(--home-s3);
   right: var(--home-s3);
+  display: grid;
+  gap: 6px;
+  justify-items: end;
+}
+
+.search-free-pill {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -111,6 +117,26 @@
 .search-free-pill .material-symbols-rounded {
   font-size: 16px;
   color: #16a34a;
+}
+
+.search-privacy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(202, 138, 4, .36);
+  background: linear-gradient(135deg, rgba(254, 252, 232, .96), rgba(254, 249, 195, .9));
+  color: #854d0e;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  box-shadow: 0 8px 18px rgba(202, 138, 4, .12);
+}
+
+.search-privacy-pill .material-symbols-rounded {
+  font-size: 16px;
+  color: #ca8a04;
 }
 
 .search-eyebrow {
@@ -378,9 +404,17 @@
   }
 
   .search-free-pill {
+    width: fit-content;
+  }
+
+  .search-privacy-pill {
+    width: fit-content;
+  }
+
+  .search-trust-pills {
     position: static;
     margin-bottom: var(--home-s2);
-    width: fit-content;
+    justify-items: start;
   }
 
   .search-quick-link {
