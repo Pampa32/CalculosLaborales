@@ -84,37 +84,94 @@
                </button>
                <nav class="nav" id="navMenu">
   <a href="/">Inicio</a>
-  <a href="/tools/horas-trabajadas.html">Horas</a>
-  <a href="/tools/sueldo-neto.html">Sueldo neto</a>
-  <a href="/tools/finiquito.html">Finiquito</a>
+  <div class="nav-item dropdown">
+    <button class="nav-link nav-dropdown" type="button" aria-expanded="false" data-nav-section="tools">Herramientas <span class="chev">&#9662;</span></button>
+    <div class="dropdown-menu mega-menu" role="menu">
+      <div class="mega-menu-grid">
+        <div class="menu-group">
+          <div class="menu-group-title">Nómina y salario</div>
+          <a href="/tools/sueldo-neto.html" role="menuitem">Sueldo neto</a>
+          <a href="/tools/calculadora-irpf-nomina.html" role="menuitem">IRPF en nómina</a>
+          <a href="/tools/calculadora-pagas-extra.html" role="menuitem">Pagas extra</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Despido y finiquito</div>
+          <a href="/tools/finiquito.html" role="menuitem">Finiquito</a>
+          <a href="/tools/calculadora-indemnizacion-despido.html" role="menuitem">Indemnización por despido</a>
+          <a href="/tools/calculadora-vacaciones-generadas.html" role="menuitem">Vacaciones generadas</a>
+          <a href="/tools/calculadora-antiguedad-laboral.html" role="menuitem">Antigüedad laboral</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Paro y cotización</div>
+          <a href="/tools/calculadora-paro.html" role="menuitem">Calculadora del paro</a>
+          <a href="/tools/duracion-paro.html" role="menuitem">Duración del paro</a>
+          <a href="/tools/subsidio-mayores-52.html" role="menuitem">Subsidio mayores de 52</a>
+          <a href="/tools/calculadora-dias-cotizados.html" role="menuitem">Días cotizados</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Pensiones e incapacidad</div>
+          <a href="/tools/calculadora-jubilacion.html" role="menuitem">Jubilación</a>
+          <a href="/tools/calculadora-incapacidad-permanente.html" role="menuitem">Incapacidad permanente</a>
+          <a href="/tools/calculadora-baja-laboral.html" role="menuitem">Baja laboral</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Jornada y complementos</div>
+          <a href="/tools/horas-trabajadas.html" role="menuitem">Horas trabajadas</a>
+          <a href="/tools/calculadora-plus-nocturnidad.html" role="menuitem">Plus de nocturnidad</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Autónomos</div>
+          <a href="/tools/cuota-autonomos.html" role="menuitem">Cuota de autónomos</a>
+          <a href="/tools/calculadora-iva-autonomos.html" role="menuitem">IVA de autónomos</a>
+          <a href="/tools/retencion-factura-autonomos.html" role="menuitem">Retencion en factura</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-item dropdown">
+    <button class="nav-link nav-dropdown" type="button" aria-expanded="false" data-nav-section="guides">Guías <span class="chev">&#9662;</span></button>
+    <div class="dropdown-menu mega-menu" role="menu">
+      <div class="mega-menu-grid">
+        <div class="menu-group">
+          <div class="menu-group-title">Nómina y salario</div>
+          <a href="/guia/como-leer-una-nomina.html" role="menuitem">Cómo leer una nómina</a>
+          <a href="/guia/diferencia-entre-sueldo-bruto-y-neto.html" role="menuitem">Bruto vs neto</a>
+          <a href="/guia/como-se-pagan-las-horas-extra.html" role="menuitem">Horas extra</a>
+          <a href="/guia/declarar-irpf-2026.html" role="menuitem">Declarar IRPF 2026</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Despido y derechos</div>
+          <a href="/guia/como-calcular-finiquito-en-espana.html" role="menuitem">Calcular finiquito</a>
+          <a href="/guia/como-calcular-indemnizacion-por-despido.html" role="menuitem">Indemnización por despido</a>
+          <a href="/guia/indemnizacion-despido-tabla.html" role="menuitem">Tabla de indemnizaciones</a>
+          <a href="/guia/derechos-del-trabajador-2026.html" role="menuitem">Derechos del trabajador</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Paro y prestaciones</div>
+          <a href="/guia/como-solicitar-el-paro-paso-a-paso.html" role="menuitem">Solicitar el paro</a>
+          <a href="/guia/paro-en-espana-guia-completa.html" role="menuitem">Guía completa del paro</a>
+          <a href="/guia/como-calcular-base-reguladora-paro.html" role="menuitem">Base reguladora del paro</a>
+          <a href="/guia/reanudar-paro-despues-de-trabajar.html" role="menuitem">Reanudar el paro</a>
+          <a href="/guia/trabajar-mientras-cobras-el-paro.html" role="menuitem">Trabajar cobrando paro</a>
+          <a href="/guia/plazo-para-solicitar-el-paro.html" role="menuitem">Plazo para solicitarlo</a>
+          <a href="/guia/cuando-se-cobra-el-paro-tras-solicitarlo.html" role="menuitem">Cuándo se cobra</a>
+          <a href="/guia/cuanto-se-cobra-el-primer-mes-de-paro.html" role="menuitem">Primer mes de paro</a>
+          <a href="/guia/subvenciones-desempleo-2026.html" role="menuitem">Subsidios 2026</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Autónomos</div>
+          <a href="/guia/gastos-deducibles-autonomos-iva-irpf.html" role="menuitem">Gastos deducibles</a>
+        </div>
+        <div class="menu-group">
+          <div class="menu-group-title">Actualidad</div>
+          <a href="/guia/cambios-laborales-2026.html" role="menuitem">Cambios laborales 2026</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <a href="/desempleo/">Desempleo</a>
   <a href="/autonomos/">Autónomos</a>
   <a href="/blog/">Blog</a>
-  <div class="nav-item dropdown">
-    <button class="nav-link nav-dropdown" type="button" aria-expanded="false">Guías <span class="chev">&#9662;</span></button>
-    <div class="dropdown-menu" role="menu">
-      <a href="/guia/diferencia-entre-sueldo-bruto-y-neto.html" role="menuitem">Bruto vs neto (con ejemplos)</a>
-      <a href="/guia/como-calcular-finiquito-en-espana.html" role="menuitem">Calcular finiquito (paso a paso)</a>
-      <a href="/guia/como-se-pagan-las-horas-extra.html" role="menuitem">Cómo se pagan las horas extra</a>
-      <a href="/guia/como-calcular-indemnizacion-por-despido.html" role="menuitem">Cómo calcular la indemnización por despido</a>
-      <a href="/guia/como-solicitar-el-paro-paso-a-paso.html" role="menuitem">Solicitar paro paso a paso</a>
-      <a href="/guia/cuanto-se-cobra-el-primer-mes-de-paro.html" role="menuitem">Cuánto se cobra el primer mes de paro</a>
-      <a href="/guia/trabajar-mientras-cobras-el-paro.html" role="menuitem">Trabajar mientras cobras paro</a>
-      <a href="/guia/plazo-para-solicitar-el-paro.html" role="menuitem">Plazo para solicitar el paro</a>
-      <a href="/guia/cuando-se-cobra-el-paro-tras-solicitarlo.html" role="menuitem">Cuándo se cobra el paro tras solicitarlo</a>
-      <a href="/guia/paro-en-espana-guia-completa.html" role="menuitem">Guía completa paro en España</a>
-      <a href="/guia/como-calcular-base-reguladora-paro.html" role="menuitem">Cómo calcular la base reguladora del paro</a>
-      <a href="/guia/reanudar-paro-despues-de-trabajar.html" role="menuitem">Reanudar el paro después de trabajar</a>
-      <a href="/guia/gastos-deducibles-autonomos-iva-irpf.html" role="menuitem">Gastos deducibles de autónomos (IVA e IRPF)</a>
-      <hr class="menu-divider"/>
-      <a href="/guia/cambios-laborales-2026.html" role="menuitem"><strong>* Cambios 2026</strong></a>
-      <a href="/guia/como-leer-una-nomina.html" role="menuitem">Cómo leer una nómina</a>
-      <a href="/guia/indemnizacion-despido-tabla.html" role="menuitem">Tabla indemnizaciones</a>
-      <a href="/guia/declarar-irpf-2026.html" role="menuitem">Declarar IRPF 2026</a>
-      <a href="/guia/subvenciones-desempleo-2026.html" role="menuitem">Subsidios desempleo 2026</a>
-      <a href="/guia/derechos-del-trabajador-2026.html" role="menuitem">Derechos del trabajador</a>
-    </div>
-  </div>
 </nav>
           </div>
      </header>
@@ -134,6 +191,13 @@
                <div class="hero-actions">
                     <a class="btn btn-primary" href="/tools/sueldo-neto.html">Calcular sueldo neto</a>
                     <a class="btn" href="/tools/finiquito.html">Calcular finiquito</a>
+                    <a class="btn" href="/tools/calculadora-vacaciones-generadas.html">Calcular vacaciones</a>
+                    <a class="btn" href="/tools/calculadora-indemnizacion-despido.html">Calcular indemnizacion</a>
+                    <a class="btn" href="/tools/calculadora-baja-laboral.html">Calcular baja laboral</a>
+                    <a class="btn" href="/tools/calculadora-irpf-nomina.html">Calcular IRPF nomina</a>
+                    <a class="btn" href="/tools/calculadora-pagas-extra.html">Calcular pagas extra</a>
+                    <a class="btn" href="/tools/calculadora-jubilacion.html">Calcular jubilacion</a>
+                    <a class="btn" href="/tools/calculadora-incapacidad-permanente.html">Calcular incapacidad</a>
                     <a class="btn" href="/tools/calculadora-paro.html">Desempleo y subsidios</a>
                     <a class="btn" href="/autonomos/">Autónomos</a>
                </div>
@@ -216,6 +280,61 @@
                     </article>
                     <article class="card">
                          <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">request_quote</span>
+                         </div>
+                         <h2>Calculadora de IRPF en nomina</h2>
+                         <p>Simula porcentaje e importe mensual de retencion IRPF en nomina de forma orientativa.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-irpf-nomina.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">calendar_month</span>
+                         </div>
+                         <h2>Calculadora de pagas extra</h2>
+                         <p>Calcula paga completa, parte proporcional y prorrata mensual de pagas extraordinarias.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-pagas-extra.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">elderly</span>
+                         </div>
+                         <h2>Calculadora de jubilacion</h2>
+                         <p>Simula pension orientativa segun base reguladora, anos cotizados y edad de retiro.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-jubilacion.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">health_and_safety</span>
+                         </div>
+                         <h2>Calculadora de incapacidad permanente</h2>
+                         <p>Calcula cuantia orientativa para incapacidad total, absoluta, parcial o gran invalidez.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-incapacidad-permanente.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">badge</span>
+                         </div>
+                         <h2>Calculadora de antiguedad laboral</h2>
+                         <p>Calcula anos, meses, dias, trienios y quinquenios de forma orientativa.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-antiguedad-laboral.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
                               <span class="material-symbols-rounded card-icon">receipt_long</span>
                          </div>
                          <h2>Calculadora de finiquito</h2>
@@ -228,6 +347,28 @@
                     </article>
                     <article class="card">
                          <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">gavel</span>
+                         </div>
+                         <h2>Calculadora de indemnizacion por despido</h2>
+                         <p>Calcula indemnizacion orientativa segun tipo de despido, salario y antiguedad.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-indemnizacion-despido.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">healing</span>
+                         </div>
+                         <h2>Calculadora de baja laboral</h2>
+                         <p>Estimacion orientativa de incapacidad temporal por enfermedad comun o accidente laboral.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-baja-laboral.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
                               <span class="material-symbols-rounded card-icon">schedule</span>
                          </div>
                          <h2>Calculadora de horas trabajadas</h2>
@@ -235,6 +376,28 @@
                          <div class="card-actions">
                               <a class="btn btn-primary" href="/tools/horas-trabajadas.html">Ir a la calculadora</a>
                               <span class="tag">Súper rápida</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">bedtime</span>
+                         </div>
+                         <h2>Calculadora de plus de nocturnidad</h2>
+                         <p>Calcula el complemento nocturno por hora o porcentaje de forma orientativa.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-plus-nocturnidad.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">beach_access</span>
+                         </div>
+                         <h2>Calculadora de vacaciones generadas</h2>
+                         <p>Calcula tus dias de vacaciones pendientes segun periodo trabajado, dias anuales y vacaciones ya disfrutadas.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-vacaciones-generadas.html">Ir a la calculadora</a>
+                              <span class="tag">Nueva</span>
                          </div>
                     </article>
                </div>
@@ -270,6 +433,17 @@
                          <div class="card-actions">
                               <a class="btn btn-primary" href="/tools/duracion-paro.html">Calcular</a>
                               <span class="tag">Tabla SEPE</span>
+                         </div>
+                    </article>
+                    <article class="card">
+                         <div class="card-emoji">
+                              <span class="material-symbols-rounded card-icon">calendar_clock</span>
+                         </div>
+                         <h2>Calculadora de dias cotizados</h2>
+                         <p>Calcula dias cotizados por fechas, suma acumulado previo y revisa equivalencias para paro.</p>
+                         <div class="card-actions">
+                              <a class="btn btn-primary" href="/tools/calculadora-dias-cotizados.html">Calcular</a>
+                              <span class="tag">Vida laboral</span>
                          </div>
                     </article>
                     <article class="card">
@@ -317,7 +491,7 @@
                          <p>Comprende bruto y neto, retenciones y estructura de nomina con ejemplos claros.</p>
                          <div class="card-actions">
                               <a class="btn btn-primary" href="/tools/sueldo-neto.html">Calcular sueldo neto</a>
-                              <a class="btn" href="/guia/como-leer-una-nomina.html">Como leer una nomina</a>
+                              <a class="btn" href="/guia/como-leer-una-nomina.html">Cómo leer una nómina</a>
                          </div>
                     </article>
                </div>
@@ -499,6 +673,32 @@
      <script>
           const _yEl = document.getElementById('y'); if (_yEl) _yEl.textContent = new Date().getFullYear();
      </script>
+     <script>
+          (function trackToolCtas() {
+               if (typeof document === 'undefined') return;
+
+               document.addEventListener('click', function (event) {
+                    const link = event.target.closest('a[href^="/tools/"]');
+                    if (!link) return;
+
+                    const href = link.getAttribute('href') || '';
+                    if (!href || href === '/tools/') return;
+
+                    let area = 'other';
+                    if (link.closest('.hero-actions')) area = 'hero-actions';
+                    else if (link.closest('.card-actions')) area = 'card-actions';
+
+                    if (typeof gtag === 'function') {
+                         gtag('event', 'tool_cta_click', {
+                              event_category: 'engagement',
+                              event_label: href,
+                              link_area: area,
+                              link_text: (link.textContent || '').trim()
+                         });
+                    }
+               });
+          })();
+     </script>
      
 
 <footer class="footer">
@@ -542,3 +742,4 @@
 </body>
 
 </html>
+

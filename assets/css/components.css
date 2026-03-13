@@ -600,15 +600,46 @@ details p {
   gap: 10px;
   align-items: center;
   padding: 12px 14px;
-  background: rgba(255, 255, 255, .72);
-  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .88), rgba(248, 250, 252, .9));
+  border: 1px solid rgba(148, 163, 184, .28);
   border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(2, 6, 23, .06);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .65), 0 4px 12px rgba(2, 6, 23, .04);
+  cursor: default;
+  position: relative;
+}
+
+.trust-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, .45);
+}
+
+.trust-item:nth-child(2)::before {
+  background: rgba(2, 132, 199, .45);
+}
+
+.trust-item:nth-child(3)::before {
+  background: rgba(22, 163, 74, .45);
 }
 
 .trust-ic {
   font-size: 18px;
   line-height: 1;
+  color: #2556c8;
+  opacity: .95;
+}
+
+.trust-item:nth-child(2) .trust-ic {
+  color: #0e7490;
+}
+
+.trust-item:nth-child(3) .trust-ic {
+  color: #15803d;
 }
 
 .trust-ic .material-symbols-rounded {

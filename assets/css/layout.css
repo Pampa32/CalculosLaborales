@@ -226,6 +226,13 @@
   color: var(--accent);
 }
 
+.nav a.is-current,
+.nav .nav-link.is-current {
+  background: rgba(37, 99, 235, .10);
+  color: var(--accent);
+  border-color: rgba(37, 99, 235, .18);
+}
+
 .nav a:hover::after,
 .nav .nav-link:hover::after {
   width: calc(100% - 24px);
@@ -245,6 +252,23 @@
 .nav-dropdown {
   cursor: pointer;
   border: 1px solid transparent;
+  transition: background .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.dropdown > .nav-dropdown .chev {
+  transition: transform .22s ease, opacity .22s ease;
+}
+
+.dropdown.open > .nav-dropdown {
+  background: rgba(37, 99, 235, .14);
+  color: var(--accent);
+  border-color: rgba(37, 99, 235, .28);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, .10);
+}
+
+.dropdown.open > .nav-dropdown .chev {
+  transform: rotate(180deg);
+  opacity: 1;
 }
 
 .chev {
@@ -270,6 +294,54 @@
   overscroll-behavior: contain;
   scrollbar-width: thin;
   scrollbar-color: rgba(15, 23, 42, .35) transparent;
+}
+
+.mega-menu {
+  width: min(92vw, 760px);
+  min-width: 620px;
+  padding: 14px;
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  padding: 4px 0 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, .24);
+  background: rgba(248, 250, 252, .72);
+}
+
+.menu-group-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 10px 6px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #2f4fa3;
+  background: linear-gradient(180deg, rgba(59, 130, 246, .12), rgba(59, 130, 246, .06));
+  border: 1px solid rgba(59, 130, 246, .20);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.menu-group-title::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: .8;
 }
 
 .dropdown-menu::-webkit-scrollbar {
@@ -312,6 +384,11 @@
   background: rgba(15, 23, 42, .06);
 }
 
+.mega-menu a {
+  padding: 9px 12px;
+  font-weight: 700;
+}
+
 .menu-divider {
   margin: 8px 0;
   border: none;
@@ -331,6 +408,11 @@
     left: 0;
     right: auto;
     width: min(92vw, 320px);
+  }
+
+  .mega-menu {
+    min-width: 0;
+    width: min(92vw, 340px);
   }
 }
 
@@ -360,6 +442,21 @@
     -webkit-overflow-scrolling: touch;
     margin-top: 6px;
     padding: 8px;
+  }
+
+  .header .nav .mega-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .header .nav .menu-group {
+    gap: 2px;
+    padding: 2px 0 6px;
+    border-radius: 12px;
+  }
+
+  .header .nav .menu-group-title {
+    margin: 2px 8px 6px;
   }
 
   .header .nav .dropdown-menu a {
