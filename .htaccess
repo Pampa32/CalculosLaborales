@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Canonicaliza cualquier /index.html a la carpeta (incluye la raiz).
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[\s?]|$) [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
