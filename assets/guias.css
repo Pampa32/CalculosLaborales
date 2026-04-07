@@ -1,0 +1,437 @@
+/* guias.css — estilo editorial para guías (solo estética) */
+
+:root{
+  --article-w: 860px;
+}
+
+body{
+  line-height: 1.65;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.article-hero{
+  width: min(var(--article-w), 100%);
+  margin: 18px auto 0;
+  padding: 22px 18px 16px;
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(11,18,32,.10);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(2,6,23,.08);
+}
+
+.article-hero h1{
+  margin: 0 0 8px;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -.6px;
+}
+
+.article-hero p{
+  margin: 0;
+  color: rgba(11,18,32,.72);
+  font-size: 16px;
+}
+
+main{
+  width: min(var(--article-w), 100%);
+  margin: 12px auto 44px;
+  padding: 0 4px;
+  max-width: 100%;
+}
+
+.breadcrumb{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(255,255,255,.75);
+  color: rgba(11,18,32,.72);
+  font-size: 13px;
+  box-shadow: 0 10px 22px rgba(2,6,23,.06);
+}
+
+.breadcrumb a{
+  color: rgba(11,18,32,.86);
+  text-decoration: none;
+  font-weight: 700;
+}
+.breadcrumb a:hover{
+  text-decoration: underline;
+}
+
+section{
+  margin: 18px 0;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(255,255,255,.86);
+  box-shadow: 0 14px 30px rgba(2,6,23,.06);
+}
+
+section h2{
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: -.2px;
+}
+
+section p{
+  margin: 0 0 12px;
+}
+
+section ul, section ol{
+  margin: 10px 0 0 18px;
+  padding: 0;
+}
+section li{ margin: 8px 0; }
+
+.callout{
+  margin-top: 14px;
+  padding: 14px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15,118,110,.22);
+  background: rgba(15,118,110,.08);
+  color: rgba(11,18,32,.92);
+}
+
+.callout p{ margin: 0; }
+
+.table-wrap{
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border-radius: 16px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 12px 26px rgba(2,6,23,.06);
+  margin-top: 14px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+  font-size: 14px;
+}
+
+/* Evitar que cualquier contenido (texto/links largos) provoque overflow en móvil */
+section, .guide-card, .callout, .breadcrumb, td, th, p, li{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+th, td{
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(11,18,32,.08);
+  vertical-align: top;
+}
+th{
+  text-align: left;
+  font-weight: 800;
+  background: rgba(2,6,23,.04);
+}
+tr:last-child td{ border-bottom: none; }
+
+@media (max-width: 520px){
+  .article-hero{ padding: 18px 14px 14px; border-radius: 18px; }
+  section{ padding: 14px; border-radius: 16px; }
+  .breadcrumb{ border-radius: 12px; }
+  .article-hero h1{ letter-spacing: -.4px; }
+}
+
+
+/* --- Enhancements for pillar guides (scan-friendly blocks) --- */
+.toc .guide-cards{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 12px 0 14px;
+}
+@media (max-width: 860px){
+  .toc .guide-cards{ grid-template-columns: 1fr; }
+}
+
+.guide-card{
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(11,18,32,.10);
+  border-radius: 18px;
+  padding: 14px 14px 12px;
+  box-shadow: 0 10px 22px rgba(2,6,23,.06);
+}
+.guide-card h3{ margin: 0 0 6px; font-size: 1.05rem; }
+.guide-card p{ margin: 0 0 8px; }
+.guide-card p:last-child{ margin-bottom: 0; }
+
+.toc-box{
+  margin-top: 10px;
+  padding: 14px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: linear-gradient(180deg, rgba(16,185,129,.08), rgba(59,130,246,.05));
+}
+.toc-box ul{ margin: 8px 0 0 18px; }
+.toc-box li{ margin: 6px 0; }
+
+.callout{
+  margin: 14px 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(255,255,255,.78);
+}
+.callout.info{ background: rgba(59,130,246,.07); }
+.callout.tip{ background: rgba(16,185,129,.08); }
+.callout.neutral{ background: rgba(148,163,184,.10); }
+
+.example-box{
+  margin: 14px 0;
+  padding: 14px 14px 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: linear-gradient(180deg, rgba(59,130,246,.08), rgba(255,255,255,.75));
+  box-shadow: 0 10px 24px rgba(2,6,23,.06);
+}
+.example-box h3{ margin-top: 0; }
+
+.table-wrap{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(255,255,255,.82);
+  box-shadow: 0 10px 22px rgba(2,6,23,.05);
+}
+.clean-table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+.clean-table th, .clean-table td{
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(11,18,32,.08);
+  text-align: left;
+}
+.clean-table thead th{
+  font-weight: 700;
+  background: rgba(2,6,23,.03);
+}
+
+.mistakes{
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(11,18,32,.10);
+  background: rgba(245,158,11,.10);
+}
+.mistakes ul{ margin: 0 0 0 18px; }
+.mistakes li{ margin: 8px 0; }
+
+.muted{ opacity: .85; }
+/* --- Table of Contents (TOC) Flotante --- */
+.toc-floating{
+  position: sticky;
+  top: 20px;
+  width: 280px;
+  max-height: 70vh;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(37,99,235,.15);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 12px 28px rgba(37,99,235,.08);
+  font-size: 13px;
+  overflow-y: auto;
+  z-index: 10;
+}
+.toc-floating h4{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(11,18,32,.85);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.toc-floating ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.toc-floating li{
+  margin: 0;
+  padding: 6px 0;
+}
+.toc-floating a{
+  color: rgba(37,99,235,.85);
+  text-decoration: none;
+  display: block;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.toc-floating a:hover{
+  background: rgba(37,99,235,.08);
+  color: rgba(37,99,235, 1);
+  padding-left: 12px;
+}
+.toc-floating a.active{
+  background: rgba(37,99,235,.15);
+  color: rgba(37,99,235, 1);
+  font-weight: 600;
+}
+
+/* Nested TOC items */
+.toc-floating .toc-level-2{ margin-left: 14px; font-size: 12px; color: rgba(11,18,32,.75); }
+.toc-floating .toc-level-3{ margin-left: 28px; font-size: 11px; color: rgba(11,18,32,.65); }
+
+@media (max-width: 1200px){
+  .toc-floating{ display: none; }
+}
+
+/* --- Share Buttons (Redes sociales) --- */
+.share-buttons{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 18px 0;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(11,18,32,.08);
+}
+.share-buttons-label{
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(11,18,32,.72);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-right: 8px;
+}
+.share-buttons a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  color: white;
+}
+.share-btn-linkedin{
+  background: #0A66C2;
+}
+.share-btn-linkedin:hover{
+  background: #084b97;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(10,102,194,.25);
+}
+.share-btn-twitter{
+  background: #1DA1F2;
+}
+.share-btn-twitter:hover{
+  background: #1a8cd8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(29,161,242,.25);
+}
+.share-btn-facebook{
+  background: #1877F2;
+}
+.share-btn-facebook:hover{
+  background: #0A66C2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(24,119,242,.25);
+}
+.share-btn-copy{
+  background: rgba(37,99,235,.85);
+  border: 1px solid rgba(37,99,235,.3);
+}
+.share-btn-copy:hover{
+  background: rgba(37,99,235, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37,99,235,.25);
+}
+
+@media (max-width: 560px){
+  .share-buttons{
+    flex-wrap: wrap;
+  }
+  .share-buttons a{
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+}
+
+/* --- CTA Buttons (Llamadas a Acción) --- */
+.cta-container{
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+  flex-wrap: wrap;
+}
+.cta-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.cta-btn-primary{
+  background: rgba(37,99,235,.95);
+  color: white;
+}
+.cta-btn-primary:hover{
+  background: rgba(37,99,235, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37,99,235,.25);
+}
+.cta-btn-secondary{
+  background: rgba(255,255,255,.85);
+  color: rgba(37,99,235,.95);
+  border: 1px solid rgba(37,99,235,.3);
+}
+.cta-btn-secondary:hover{
+  background: rgba(255,255,255, 1);
+  border-color: rgba(37,99,235, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37,99,235,.12);
+}
+
+/* Safety: avoid table overflow on mobile */
+main table{max-width: 100%;}
+
+
+/* Quitar highlight azul en móviles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Evitar borde azul al hacer click en botones o enlaces */
+a, button, input, select, textarea {
+  outline: none;
+}
+
+/* Mantener accesibilidad en foco con teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}

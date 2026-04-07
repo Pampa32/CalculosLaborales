@@ -1,0 +1,286 @@
+[{
+    "title": "Aviso legal",
+    "url": "/legal/aviso-legal/",
+    "type": "legal",
+    "description": "Información legal del sitio Cálculos Laborales: titularidad, condiciones de uso, responsabilidad y contacto."
+  },{
+    "title": "Baja por accidente laboral en España: cuánto se cobra",
+    "url": "/bajas/baja-por-accidente-laboral/",
+    "type": "bajas",
+    "description": "Guía sobre baja por accidente laboral en España: requisitos, mutua o empresa responsable, partes médicos y cuánto se cobra de forma orientativa."
+  },{
+    "title": "Baja por ansiedad laboral en España: cuánto se cobra y cómo funciona (2026)",
+    "url": "/bajas/baja-por-ansiedad/",
+    "type": "bajas",
+    "description": "Guía completa sobre la baja por ansiedad laboral en España: cuándo puede darse, cuánto se cobra, quién paga, duración, requisitos y errores que conviene evitar."
+  },{
+    "title": "Baja por enfermedad común en España: cuánto se cobra",
+    "url": "/bajas/baja-enfermedad-comun/",
+    "type": "bajas",
+    "description": "Guía sobre baja por enfermedad en España: requisitos, cotización mínima, partes médicos y cuánto se cobra de forma orientativa."
+  },{
+    "title": "Baja por enfermedad en España: requisitos, cobro y claves (2026)",
+    "url": "/bajas/baja-por-enfermedad/",
+    "type": "bajas",
+    "description": "Guía sobre baja por enfermedad en España: requisitos, cotización mínima, partes médicos y cuánto se cobra de forma orientativa."
+  },{
+    "title": "Baja por maternidad 2026 en España: guía clara y actualizada",
+    "url": "/bajas/baja-maternidad/",
+    "type": "bajas",
+    "description": "Guía sobre la llamada baja por maternidad en España: nombre oficial actual, cuantía, duración y puntos clave del permiso por nacimiento y cuidado del menor."
+  },{
+    "title": "Baja por paternidad 2026 en España: cuánto se cobra y cuánto dura",
+    "url": "/bajas/baja-paternidad/",
+    "type": "bajas",
+    "description": "Guía clara sobre la baja por paternidad en España en 2026: nombre oficial actual, semanas, cuantía y claves para entender el permiso."
+  },{
+    "title": "Calculadora antiguedad laboral 2026",
+    "url": "/tools/calculadora-antiguedad-laboral/",
+    "type": "tools",
+    "description": "Calcula tu antiguedad laboral en Espana a partir de fechas de inicio y fin: anos, meses, dias, trienios y quinquenios de forma orientativa."
+  },{
+    "title": "Calculadora baja laboral 2026",
+    "url": "/tools/calculadora-baja-laboral/",
+    "type": "tools",
+    "description": "Calcula cuanto cobrarias de baja laboral (IT) segun base reguladora, dias de baja y contingencia: enfermedad comun o accidente laboral."
+  },{
+    "title": "Calculadora cuota autónomos 2026",
+    "url": "/tools/cuota-autonomos/",
+    "type": "tools",
+    "description": "Estima tu cuota de autónomos en 2026 según rendimiento neto mensual, con resultado orientativo y tramos de referencia."
+  },{
+    "title": "Calculadora de horas trabajadas 2026",
+    "url": "/tools/horas-trabajadas/",
+    "type": "tools",
+    "description": "Calcula horas trabajadas por turno según hora de entrada, salida y descanso. Estima horas extra, turnos nocturnos y control diario de jornada en 2026."
+  },{
+    "title": "Calculadora de vacaciones generadas 2026",
+    "url": "/tools/calculadora-vacaciones-generadas/",
+    "type": "tools",
+    "description": "Calcula tus vacaciones generadas y pendientes segun fechas de contrato, dias anuales y jornada. Resultado orientativo al instante en 2026."
+  },{
+    "title": "Calculadora dias cotizados 2026",
+    "url": "/tools/calculadora-dias-cotizados/",
+    "type": "tools",
+    "description": "Calcula dias cotizados en Espana a partir de fechas de alta y baja, suma acumulado previo y comprueba equivalencias orientativas para paro y vida laboral."
+  },{
+    "title": "Calculadora finiquito 2026 en España",
+    "url": "/tools/finiquito/",
+    "type": "tools",
+    "description": "Calcula tu finiquito por despido o baja: salario pendiente, vacaciones no disfrutadas y pagas extra (12/14). Resultado orientativo al instante."
+  },{
+    "title": "Calculadora incapacidad permanente 2026",
+    "url": "/tools/calculadora-incapacidad-permanente/",
+    "type": "tools",
+    "description": "Calcula una pension orientativa por incapacidad permanente en Espana segun base reguladora y grado: total, absoluta o gran invalidez."
+  },{
+    "title": "Calculadora indemnizacion despido 2026",
+    "url": "/tools/calculadora-indemnizacion-despido/",
+    "type": "tools",
+    "description": "Calcula tu indemnizacion por despido en Espana segun tipo de extincion, salario, antiguedad y topes legales. Resultado orientativo en 2026."
+  },{
+    "title": "Calculadora IRPF en factura 2026",
+    "url": "/tools/retencion-factura-autonomos/",
+    "type": "tools",
+    "description": "Calcula una factura con IVA e IRPF de forma orientativa: base imponible, retención y total final en segundos."
+  },{
+    "title": "Calculadora IRPF nomina 2026",
+    "url": "/tools/calculadora-irpf-nomina/",
+    "type": "tools",
+    "description": "Calcula la retencion de IRPF de tu nomina en 2026: porcentaje estimado, importe mensual y neto tras retencion."
+  },{
+    "title": "Calculadora IVA autónomos 2026",
+    "url": "/tools/calculadora-iva-autonomos/",
+    "type": "tools",
+    "description": "Calcula tu liquidación de IVA de forma orientativa: IVA repercutido menos soportado. Útil para estimar el resultado trimestral."
+  },{
+    "title": "Calculadora jubilacion 2026",
+    "url": "/tools/calculadora-jubilacion/",
+    "type": "tools",
+    "description": "Calcula una pension de jubilacion orientativa en Espana segun base reguladora, anos cotizados y edad de retiro (ordinaria o anticipada)."
+  },{
+    "title": "Calculadora pagas extra 2026",
+    "url": "/tools/calculadora-pagas-extra/",
+    "type": "tools",
+    "description": "Calcula pagas extra en Espana: importe proporcional, prorrata mensual y paga pendiente segun meses trabajados."
+  },{
+    "title": "Calculadora paro 2026 en España",
+    "url": "/tools/calculadora-paro/",
+    "type": "tools",
+    "description": "Estima cuánto cobrarías de paro según tu base reguladora, cargas familiares y topes vigentes. Incluye cálculo 70%-60% y ejemplo práctico."
+  },{
+    "title": "Calculadora plus nocturnidad 2026",
+    "url": "/tools/calculadora-plus-nocturnidad/",
+    "type": "tools",
+    "description": "Calcula el plus de nocturnidad de forma orientativa segun salario por hora, horas nocturnas y porcentaje o importe fijo por hora."
+  },{
+    "title": "Calculadora sueldo neto 2026 en España",
+    "url": "/tools/sueldo-neto/",
+    "type": "tools",
+    "description": "Calcula tu sueldo neto mensual desde el bruto anual con IRPF y cotizaciones. Simulador 2026 en España con resultado inmediato."
+  },{
+    "title": "Cambios laborales 2026 en España",
+    "url": "/guias/cambios-laborales-2026/",
+    "type": "guias",
+    "description": "Resumen de cambios en leyes laborales 2026: cotizaciones, salario mínimo, retenciones, jornada de trabajo y nuevas obligaciones."
+  },{
+    "title": "Cómo calcular el finiquito en España (2026)",
+    "url": "/guias/como-calcular-finiquito-en-espana/",
+    "type": "guias",
+    "description": "Aprende a calcular tu finiquito: salario pendiente, vacaciones, pagas extra e indemnización si corresponde. Ejemplos claros y checklist."
+  },{
+    "title": "Cómo calcular la base reguladora del paro (2026)",
+    "url": "/guias/como-calcular-base-reguladora-paro/",
+    "type": "guias",
+    "description": "Aprende como calcular la base reguladora del paro con formula, periodos de cotizacion y ejemplo practico actualizado para 2026."
+  },{
+    "title": "Cómo declarar IRPF 2026 en España: guía paso a paso",
+    "url": "/guias/declarar-irpf-2026/",
+    "type": "guias",
+    "description": "Guia para declarar IRPF 2026: plazos, borrador, deducciones, errores frecuentes y recomendaciones para presentar la renta."
+  },{
+    "title": "Cómo leer una nómina 2026",
+    "url": "/guias/como-leer-una-nomina/",
+    "type": "guias",
+    "description": "Aprende a leer y entender tu nómina: conceptos de pago, deducciones, IRPF, cotizaciones y cómo verificar si es correcta."
+  },{
+    "title": "Cómo reanudar el paro después de trabajar (2026)",
+    "url": "/guias/reanudar-paro-despues-de-trabajar/",
+    "type": "guias",
+    "description": "Guia para reanudar el paro tras un contrato: requisitos, plazos y diferencia entre reanudar o generar una nueva prestacion."
+  },{
+    "title": "Como solicitar el paro en 2026",
+    "url": "/guias/como-solicitar-el-paro-paso-a-paso/",
+    "type": "guias",
+    "description": "Guia paso a paso para pedir el paro en Espana: requisitos, plazo de 15 dias, documentacion y cita previa en el SEPE sin errores frecuentes."
+  },{
+    "title": "Cuando se cobra el paro en 2026",
+    "url": "/guias/cuando-se-cobra-el-paro-tras-solicitarlo/",
+    "type": "guias",
+    "description": "Consulta cuando se cobra el paro tras solicitarlo: fecha del primer pago, dias habituales de ingreso, retrasos y como revisar tu expediente."
+  },{
+    "title": "Cuánto se cobra de baja laboral en España (2026)",
+    "url": "/bajas/cuanto-se-cobra-de-baja/",
+    "type": "bajas",
+    "description": "Guía clara sobre cuánto se cobra de baja laboral: enfermedad común, accidente laboral, porcentajes, tramos y claves para entender la incapacidad temporal."
+  },{
+    "title": "Cuánto se cobra de paro 2026",
+    "url": "/desempleo/cuanto-se-cobra-de-paro/",
+    "type": "desempleo",
+    "description": "Cuánto se cobra de paro en España 2026: porcentajes 70%/60%, topes mínimos y máximos, cómo se calcula la base reguladora y ejemplos prácticos."
+  },{
+    "title": "Cuánto se cobra el primer mes de paro (2026)",
+    "url": "/guias/cuanto-se-cobra-el-primer-mes-de-paro/",
+    "type": "guias",
+    "description": "Te explicamos cuánto se cobra el primer mes de paro en España: bases, topes, retenciones y ejemplos para entender tu prestación."
+  },{
+    "title": "Derechos del trabajador en Espana 2026",
+    "url": "/guias/derechos-del-trabajador-2026/",
+    "type": "guias",
+    "description": "Guia de derechos laborales en 2026: jornada, descansos, salario, permisos, despido, igualdad y canales de reclamacion."
+  },{
+    "title": "Duración del paro 2026",
+    "url": "/tools/duracion-paro/",
+    "type": "tools",
+    "description": "Calcula cuántos días de prestación te corresponden según lo cotizado en los últimos 6 años. Tabla SEPE 2026 de 120 a 720 días."
+  },{
+    "title": "Gastos deducibles de autonomos en IVA e IRPF (2026)",
+    "url": "/guias/gastos-deducibles-autonomos-iva-irpf/",
+    "type": "guias",
+    "description": "Listado actualizado de gastos deducibles para autonomos en IVA e IRPF en 2026: requisitos de factura, afectacion y errores comunes."
+  },{
+    "title": "Horas extra en España (2026)",
+    "url": "/guias/como-se-pagan-las-horas-extra/",
+    "type": "guias",
+    "description": "Descubre cómo se pagan las horas extra en España: límites, cotización, recargos y ejemplos. Incluye consejos para calcularlas."
+  },{
+    "title": "Indemnizacion por despido 2026 en Espana",
+    "url": "/guias/como-calcular-indemnizacion-por-despido/",
+    "type": "guias",
+    "description": "Aprende a calcular la indemnizacion por despido improcedente u objetivo: dias por ano, topes legales, salario regulador y ejemplos claros."
+  },{
+    "title": "Indemnización por despido: tabla de cálculo y casos",
+    "url": "/guias/indemnizacion-despido-tabla/",
+    "type": "guias",
+    "description": "Cálculo de indemnización por despido en España: tabla por antigüedad, casos de procedencia/improcedencia, ejemplos y fórmulas claras."
+  },{
+    "title": "Metodología de cálculos",
+    "url": "/legal/metodologia-calculos/",
+    "type": "legal",
+    "description": "Cómo calculamos sueldo neto, paro, finiquito y otras estimaciones en Cálculos Laborales. Fuentes oficiales, supuestos y límites de uso."
+  },{
+    "title": "Paro en España: guía completa 2026",
+    "url": "/guias/paro-en-espana-guia-completa/",
+    "type": "guias",
+    "description": "Guía completa del paro en España 2026: requisitos, cálculo de la prestación, duración por días cotizados, compatibilidades, errores frecuentes y cambios 2026."
+  },{
+    "title": "Plazo para solicitar el paro en Espana (2026)",
+    "url": "/guias/plazo-para-solicitar-el-paro/",
+    "type": "guias",
+    "description": "Plazo legal para solicitar la prestacion por desempleo: dias habiles, que pasa si te retrasas y como evitar perdida de dias."
+  },{
+    "title": "Política de cookies",
+    "url": "/legal/cookies/",
+    "type": "legal",
+    "description": "Consulta la política de cookies de Cálculos Laborales: qué cookies se usan, para qué sirven y cómo gestionarlas desde tu navegador."
+  },{
+    "title": "Política de privacidad",
+    "url": "/legal/privacidad/",
+    "type": "legal",
+    "description": "Conoce cómo tratamos tus datos en Cálculos Laborales: finalidad, base legal, derechos del usuario y medidas de seguridad."
+  },{
+    "title": "Quién paga la baja laboral en España (empresa, mutua o INSS)",
+    "url": "/bajas/quien-paga-la-baja-laboral/",
+    "type": "bajas",
+    "description": "Explicación clara sobre quién paga la baja laboral en España: empresa, mutua o INSS según enfermedad común, accidente laboral y pago delegado."
+  },{
+    "title": "Reforma de pensiones 2026: cotización, jubilación e impacto",
+    "url": "/blog/reforma-pensiones-2026/",
+    "type": "blog",
+    "description": "Análisis de la reforma de pensiones 2026: bases de cotización, edad de jubilación, coeficientes y cómo planificar mejor tu pensión futura."
+  },{
+    "title": "Simulador cuánto paro me queda 2026",
+    "url": "/desempleo/simulador-cuanto-paro-me-queda/",
+    "type": "desempleo",
+    "description": "Calcula cuánto paro te podría quedar en 2026 según días cotizados, tiempo ya consumido y base reguladora. Estimación orientativa de prestación pendiente y cuantía."
+  },{
+    "title": "Simulador derecho a paro 2026",
+    "url": "/desempleo/simulador-derecho-paro/",
+    "type": "desempleo",
+    "description": "Comprueba si podrías tener derecho a paro en 2026 según días cotizados, causa del cese y situación familiar. Estimación orientativa de prestación o subsidio."
+  },{
+    "title": "SMI 2026 en España: salario mínimo, nómina e impacto real",
+    "url": "/blog/cambios-smi-2026/",
+    "type": "blog",
+    "description": "SMI 2026 en España: cuánto sube, cómo afecta a tu nómina, diferencias entre bruto y neto, pagas extra y puntos clave para trabajadores y empresas."
+  },{
+    "title": "Sobre nosotros",
+    "url": "/legal/sobre-nosotros/",
+    "type": "legal",
+    "description": "Quiénes somos y qué hacemos en Cálculos Laborales: herramientas gratuitas, guías prácticas y enfoque claro para entender trámites laborales."
+  },{
+    "title": "Subsidio mayores de 52 anos 2026",
+    "url": "/tools/subsidio-mayores-52/",
+    "type": "tools",
+    "description": "Consulta requisitos y cuantia orientativa del subsidio para mayores de 52 anos en Espana. Guia clara con pasos y comprobaciones."
+  },{
+    "title": "Subvenciones y subsidios por desempleo 2026",
+    "url": "/guias/subvenciones-desempleo-2026/",
+    "type": "guias",
+    "description": "Resumen de subsidios y ayudas por desempleo en 2026: requisitos, cuantias orientativas y pasos para solicitarlas."
+  },{
+    "title": "Sueldo bruto vs neto (2026)",
+    "url": "/guias/diferencia-entre-sueldo-bruto-y-neto/",
+    "type": "guias",
+    "description": "Entiende la diferencia entre sueldo bruto y neto: cotizaciones, IRPF y ejemplos. Aprende a interpretar tu nómina sin complicarte."
+  },{
+    "title": "Teletrabajo 2026 en España: derechos, desconexión y obligaciones",
+    "url": "/blog/teletrabajo-derechos-2026/",
+    "type": "blog",
+    "description": "Teletrabajo 2026 en España: derechos del trabajador, registro de jornada, desconexión digital, control empresarial y cláusulas clave del acuerdo remoto."
+  },{
+    "title": "Trabajar y cobrar el paro 2026",
+    "url": "/guias/trabajar-mientras-cobras-el-paro/",
+    "type": "guias",
+    "description": "Qué pasa si trabajas mientras cobras el paro en España: compatibilidades, contratos, parcialidad, suspensión, SEPE y ejemplos reales."
+  }]

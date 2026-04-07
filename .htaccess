@@ -8,3 +8,25 @@ RewriteRule ^(.*)$ https://calculoslaborales.es/$1 [R=301,L]
 # Canonicaliza cualquier /index.html a la carpeta (incluye la raiz).
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[\s?]|$) [NC]
 RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+
+# Compatibilidad tras migracion a Hugo: redirige URLs antiguas .html a rutas limpias.
+RewriteCond %{THE_REQUEST} \s/+guia/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^guia/([^/]+)\.html$ /guias/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+tools/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^tools/([^/]+)\.html$ /tools/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+bajas/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^bajas/([^/]+)\.html$ /bajas/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+blog/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^blog/([^/]+)\.html$ /blog/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+desempleo/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^desempleo/([^/]+)\.html$ /desempleo/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+legal/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^legal/([^/]+)\.html$ /legal/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+autonomos/([^\s?]+)\.html(?:[\s?]|$) [NC]
+RewriteRule ^autonomos/([^/]+)\.html$ /autonomos/$1/ [R=301,L]
