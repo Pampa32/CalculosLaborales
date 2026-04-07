@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Calculadora IRPF en factura 2026 | Cálculos Laborales</title>
-<meta content="Calcula una factura con IVA e IRPF de forma orientativa: base imponible, retención y total final en segundos." name="description"/>
+<meta content="Calcula factura con IVA + IRPF 2026: base imponible, retencion, total final. Orientativo en segundos. Autonomos." name="description"/>
 <link href="https://calculoslaborales.es/tools/retencion-factura-autonomos.html" rel="canonical"/>
 <meta content="#0f172a" name="theme-color"/>
 <meta content="index,follow" name="robots"/>
@@ -188,7 +188,7 @@ gtag('config', 'G-BEGREVBK6N');
 <li><strong>Factura a particular:</strong> no se retiene IRPF. El cliente raramente está obligado a retener.</li>
 <li><strong>Actividades empresariales (epigrafe de actividad económica):</strong> ciertas actividades en módulos o IAE pueden no llevar retención. Consulta con tu asesoría.</li>
 <li><strong>Factura al extranjero:</strong> no suele aplicar retención española, aunque el convenio con el país de destino puede contemplar retenciones en origen.</li>
-<li><strong>Importe anual &lt; 3.000 €:</strong> algunas actividades quedan excluidas de retención si el volumen es reducido. Verifica con tu gestor.</li>
+<li><strong>Reglas especiales por actividad:</strong> algunos sectores tienen particularidades fiscales y de facturación. Verifica siempre tu caso con asesoría.</li>
 </ul>
 </div>
 </section><section class="section-block">
@@ -225,6 +225,81 @@ gtag('config', 'G-BEGREVBK6N');
 </div>
 <section class="section-block">
 <div class="section-head">
+<h2>Cómo leer el resultado de la calculadora</h2>
+<p>El objetivo es distinguir claramente qué parte es ingreso para ti y qué parte se ingresa en Hacienda.</p>
+</div>
+<div class="content">
+<ul class="list">
+<li><strong>Base imponible</strong>: importe de tus servicios antes de impuestos.</li>
+<li><strong>IVA</strong>: se suma al total de factura, pero no es ingreso neto del profesional.</li>
+<li><strong>Retención IRPF</strong>: se resta de lo que te paga el cliente y se ingresa a tu nombre.</li>
+<li><strong>Total a cobrar</strong>: base + IVA - retención; es lo que efectivamente recibes en cuenta.</li>
+</ul>
+</div>
+</section>
+<section class="section-block">
+<div class="section-head">
+<h2>Ejemplos prácticos rápidos</h2>
+</div>
+<div class="content">
+<div class="card">
+<h3>Factura a empresa con retención general</h3>
+<p>Base 1.000 euros, IVA 21% e IRPF 15%: IVA 210, retención 150 y total a cobrar 1.060 euros.</p>
+</div>
+<div class="card">
+<h3>Factura a particular sin retención</h3>
+<p>Base 1.000 euros, IVA 21% e IRPF 0%: total a cobrar 1.210 euros.</p>
+</div>
+<div class="card">
+<h3>Inicio de actividad al 7%</h3>
+<p>Con la misma base e IVA, bajar del 15% al 7% aumenta el cobro inmediato, pero conviene prever el efecto en la declaracion anual.</p>
+</div>
+</div>
+</section>
+<section class="section-block">
+<div class="section-head">
+<h2>Errores frecuentes al emitir facturas con IRPF</h2>
+<p>Son los fallos que más generan regularizaciones o dudas posteriores.</p>
+</div>
+<div class="content">
+<ul class="list">
+<li>Aplicar retención en facturas a particulares cuando no corresponde.</li>
+<li>Calcular la retención sobre base + IVA en lugar de solo sobre la base.</li>
+<li>Usar el 7% fuera del periodo de inicio de actividad aplicable.</li>
+<li>Confundir total facturado con ingreso neto disponible.</li>
+<li>No revisar particularidades cuando el cliente está fuera de España.</li>
+</ul>
+</div>
+</section>
+<section class="section-block">
+<div class="section-head">
+<h2>Que no cubre esta herramienta</h2>
+</div>
+<div class="content">
+<ul class="list">
+<li>No sustituye la validacion fiscal de tu asesoria en casos complejos.</li>
+<li>No aplica automaticamente todas las reglas de operaciones internacionales.</li>
+<li>No calcula modelos tributarios completos ni regularizaciones anuales.</li>
+<li>No determina por si sola deducibilidad o regimen fiscal de cada actividad.</li>
+</ul>
+</div>
+</section>
+<section class="section-block">
+<div class="section-head">
+<h2>Checklist rapido antes de emitir factura</h2>
+</div>
+<div class="content">
+<ol class="list">
+<li><strong>Confirma tipo de cliente</strong> (empresa/autonomo o particular).</li>
+<li><strong>Verifica tipo de IVA</strong> aplicable a tu servicio.</li>
+<li><strong>Valida retencion IRPF</strong> correcta (15%, 7% o 0%).</li>
+<li><strong>Revisa base imponible</strong> sin mezclarla con IVA.</li>
+<li><strong>Guarda factura y soporte</strong> para tus modelos trimestrales.</li>
+</ol>
+</div>
+</section>
+<section class="section-block">
+<div class="section-head">
 <h2>Preguntas frecuentes</h2>
 <p>Respuestas rápidas para evitar líos.</p>
 </div>
@@ -244,7 +319,7 @@ gtag('config', 'G-BEGREVBK6N');
 <li>Fuentes: <a href="https://www.agenciatributaria.es/" rel="noopener" target="_blank">Agencia Tributaria</a> y normativa en el <a href="https://www.boe.es/" rel="noopener" target="_blank">BOE</a>.</li>
 <li>Si tienes dudas sobre qué retención aplicar en tu caso, consúltalo con tu asesoría fiscal.</li>
 </ul>
-<p class="muted"><strong>Última actualización: marzo 2026.</strong> <a href="/legal/sobre-nosotros.html">Cómo elaboramos nuestros cálculos</a>.</p>
+<p class="muted"><strong>Última actualización: abril 2026.</strong> <a href="/legal/metodologia-calculos.html">Metodología de cálculos</a>.</p>
 </section>
 </main>
 <script defer="" src="../assets/js/nav.min.js?v=20260313e"></script>
