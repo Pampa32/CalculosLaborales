@@ -1,5 +1,10 @@
 RewriteEngine On
 
+# Fuerza HTTPS y dominio canonico sin www.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.calculoslaborales\.es$ [NC]
+RewriteRule ^(.*)$ https://calculoslaborales.es/$1 [R=301,L]
+
 # Canonicaliza cualquier /index.html a la carpeta (incluye la raiz).
 RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[\s?]|$) [NC]
 RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]

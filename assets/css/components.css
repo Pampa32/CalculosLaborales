@@ -922,3 +922,6 @@ details p {
     line-height: 1.5;
   }
 }
+/* Tool cards subtle background for calculators/simulators */
+a.card[href*="/tools/"]{background:#f3f8ff;border:1px solid #e3edff;}
+a.card[href*="/tools/"]:hover{background:#eaf3ff;}
