@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Metodología de cálculos — Cálculos Laborales</title>
-<meta content="Cómo calculamos sueldo neto, paro, finiquito y otras estimaciones en Cálculos Laborales. Fuentes oficiales, supuestos y límites de uso." name="description"/>
+<meta content="Como calculamos sueldo neto, paro, finiquito, IRPF, indemnizacion y otras estimaciones en Calculos Laborales. Formulas, fuentes oficiales, supuestos y limites por tipo de calculadora." name="description"/>
 <link href="https://calculoslaborales.es/legal/metodologia-calculos.html" rel="canonical"/>
 <meta content="index,follow" name="robots"/>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
@@ -171,43 +171,103 @@ gtag('config', 'G-BEGREVBK6N');
 <main class="container">
 <section class="hero">
 <h1>Metodología de cálculos</h1>
-<p>Cómo construimos las estimaciones, qué fuentes usamos y qué límites tienen los resultados.</p>
+<p>Cómo construimos las estimaciones, qué fuentes legales usamos, qué supuestos aplica cada calculadora y cuáles son los límites de los resultados.</p>
 </section>
 <section class="panel">
-<h2>1. Principios de la web</h2>
-<p class="note">Nuestras calculadoras están diseñadas para ofrecer una referencia rápida y comprensible. El objetivo es ayudarte a entender órdenes de magnitud y comparar escenarios, no sustituir una resolución oficial.</p>
+<h2>1. Principios generales</h2>
+<p class="note">Las herramientas de CalculosLaborales.es están diseñadas para dar una referencia rápida y comprensible. El objetivo es ayudarte a entender órdenes de magnitud y comparar escenarios, no sustituir una resolución oficial ni el trabajo de un profesional.</p>
+<p class="note">Todos los cálculos se efectúan en el navegador del usuario. No enviamos datos a ningún servidor externo ni los almacenamos.</p>
 <div class="divider"></div>
 <h2>2. Fuentes principales</h2>
 <ul class="legal-list">
-<li><a href="https://www.sepe.es/" rel="noopener nofollow" target="_blank">SEPE</a>: prestaciones por desempleo, requisitos y criterios generales.</li>
-<li><a href="https://www.seg-social.es/" rel="noopener nofollow" target="_blank">Seguridad Social</a>: cotización, bases y aspectos contributivos.</li>
-<li><a href="https://www.boe.es/" rel="noopener nofollow" target="_blank">BOE</a>: normativa y actualizaciones legales publicadas.</li>
-<li><a href="https://sede.agenciatributaria.gob.es/" rel="noopener nofollow" target="_blank">Agencia Tributaria</a>: criterios tributarios aplicables en IRPF e IVA.</li>
+<li><a href="https://www.sepe.es/" rel="noopener nofollow" target="_blank">SEPE</a>: criterios de prestaciones por desempleo, requisitos de acceso, topes y reglas generales del subsidio.</li>
+<li><a href="https://www.seg-social.es/" rel="noopener nofollow" target="_blank">Seguridad Social</a>: bases de cotización, tipos aplicables, bases mínimas y máximas.</li>
+<li><a href="https://www.boe.es/" rel="noopener nofollow" target="_blank">BOE</a>: normativa laboral y fiscal publicada (Real Decreto-ley, Estatuto de los Trabajadores, Ley IRPF y reglamentos de desarrollo).</li>
+<li><a href="https://sede.agenciatributaria.gob.es/" rel="noopener nofollow" target="_blank">Agencia Tributaria (AEAT)</a>: tramos y tipos del IRPF estatal, retenciones 2026, deducciones generales aplicables.</li>
 </ul>
 <div class="divider"></div>
-<h2>3. Supuestos por tipo de calculadora</h2>
-<h3>Sueldo neto</h3>
-<p class="note">Se aplican supuestos estándar de cotización y retención orientativa. El resultado puede variar por convenio, situación familiar, retribución variable y circunstancias fiscales personales.</p>
-<h3>Paro y subsidios</h3>
-<p class="note">Se usan porcentajes generales de la prestación contributiva y topes orientativos. El resultado final depende de la validación del SEPE y de tu historial concreto de cotización.</p>
-<h3>Finiquito e indemnización</h3>
-<p class="note">La estimación contempla salario pendiente, vacaciones no disfrutadas y pagas extra según datos introducidos. La cifra real puede cambiar por convenio, pactos y jurisprudencia aplicable.</p>
-<h3>Autónomos (IVA/IRPF/cuota)</h3>
-<p class="note">Se aplican reglas generales de cálculo para estimar escenarios. No sustituye la revisión de un asesor fiscal en casos con regímenes especiales o deducciones complejas.</p>
-<div class="divider"></div>
-<h2>4. Control editorial y actualización</h2>
+<h2>3. Calculadora de sueldo neto</h2>
+<p class="note"><a href="/tools/sueldo-neto.html">Ver herramienta</a></p>
+<p class="note"><strong>Fórmula general:</strong> Neto = Bruto mensual − Cotización SS trabajador − Retención IRPF estimada.</p>
 <ul class="legal-list">
-<li>Revisión periódica de contenidos y calculadoras ante cambios normativos.</li>
-<li>Correcciones públicas cuando se detectan erratas de texto o fórmula.</li>
-<li>Indicación de fecha de actualización en páginas informativas clave.</li>
+<li><strong>Cotización SS del trabajador (2026):</strong> 4,70 % contingencias comunes + 1,55 % desempleo + 0,10 % formación profesional = 6,35 % total sobre base de cotización mensual.</li>
+<li><strong>Retención IRPF:</strong> se aplica tabla de retenciones orientativas basada en los tramos del IRPF estatal 2026 (19 % hasta 12.450 €, 24 % de 12.451 a 20.200 €, 30 % de 20.201 a 35.200 €, 37 % de 35.201 a 60.000 €, 45 % de 60.001 a 300.000 €, 47 % a partir de 300.000 €). Se calcula tipo efectivo estimado sobre el bruto anual proyectado.</li>
+<li><strong>Lo que no incluye:</strong> deducciones autonómicas, mínimo personal/familiar, hipoteca, plan de pensiones, discapacidad ni ninguna circunstancia específica no declarada. Por eso el resultado puede diferir de la retención real aplicada por la empresa.</li>
+</ul>
+<p class="note">Última revisión de tipos: marzo 2026.</p>
+<div class="divider"></div>
+<h2>4. Calculadora de IRPF en nómina</h2>
+<p class="note"><a href="/tools/calculadora-irpf-nomina.html">Ver herramienta</a></p>
+<p class="note">Estima el porcentaje de retención mensual a aplicar según el bruto anual proyectado y la situación familiar seleccionada. Aplica los mismos tramos estatales del IRPF 2026 que la calculadora de sueldo neto, con ajuste por mínimo personal y mínimo por descendientes según hijos declarados.</p>
+<ul class="legal-list">
+<li>Mínimo personal general: 5.550 € anuales (base de cálculo de retención reducida).</li>
+<li>Mínimo por descendiente (primer hijo): 2.400 €; segundo hijo: 2.700 €; a partir del tercero: 4.000 €.</li>
+<li>No incluye: deducciones autonómicas, discapacidad, plan de pensiones, hipoteca antigua ni pagadores múltiples.</li>
+</ul>
+<p class="note">Última revisión de datos: marzo 2026.</p>
+<div class="divider"></div>
+<h2>5. Calculadora de paro</h2>
+<p class="note"><a href="/tools/calculadora-paro.html">Ver herramienta</a></p>
+<p class="note"><strong>Base de cálculo:</strong> media de las bases de cotización por contingencias comunes de los últimos 180 días trabajados.</p>
+<ul class="legal-list">
+<li><strong>Primeros 180 días:</strong> 70 % de la base reguladora diaria.</li>
+<li><strong>A partir del día 181:</strong> 60 % de la base reguladora diaria.</li>
+<li><strong>Tope máximo mensual:</strong> varía según número de hijos a cargo (sin hijos: 175 % del IPREM; con un hijo: 200 %; con dos o más hijos: 225 %). Cifras revisadas según publicación SEPE 2026.</li>
+<li><strong>Tope mínimo mensual:</strong> 80 % del IPREM sin hijos; 107 % con hijos a cargo.</li>
+<li>La herramienta usa estimaciones orientativas. El SEPE calcula la prestación real a partir del certificado de empresa y los datos de cotización verificados.</li>
+</ul>
+<p class="note">Última revisión de topes: enero 2026.</p>
+<div class="divider"></div>
+<h2>6. Calculadora de finiquito</h2>
+<p class="note"><a href="/tools/finiquito.html">Ver herramienta</a></p>
+<p class="note">La estimación suma los siguientes conceptos pendientes al cese:</p>
+<ul class="legal-list">
+<li><strong>Salario de días trabajados en el mes en curso:</strong> (bruto mensual / días del mes) × días trabajados.</li>
+<li><strong>Vacaciones no disfrutadas:</strong> (días de vacaciones anuales / 365) × días trabajados en el año − días ya disfrutados) × (bruto diario).</li>
+<li><strong>Parte proporcional de pagas extra:</strong> según esquema de pagas del contrato (12 o 14) y días transcurridos desde última paga.</li>
+<li>No incluye automáticamente compensación por horas extra pendientes, incentivos no regularizados ni acuerdos específicos de convenio.</li>
 </ul>
 <div class="divider"></div>
-<h2>5. Limitaciones importantes</h2>
-<p class="note">Las herramientas ofrecen una <strong>estimación orientativa</strong>. Para decisiones con efecto legal o económico relevante, consulta documentación oficial y/o profesionales cualificados.</p>
+<h2>7. Calculadora de indemnización por despido</h2>
+<p class="note"><a href="/tools/calculadora-indemnizacion-despido.html">Ver herramienta</a></p>
+<ul class="legal-list">
+<li><strong>Despido improcedente:</strong> 33 días de salario por año trabajado, prorrateando por meses la fracción de año, con tope de 24 mensualidades (según art. 56 ET). Para contratos iniciados antes del 12/02/2012, los años anteriores a esa fecha computan a 45 días/año con tope de 42 mensualidades por ese tramo.</li>
+<li><strong>Despido objetivo (procedente):</strong> 20 días por año con tope de 12 mensualidades.</li>
+<li>El salario diario incluye pagas extra prorrateadas según datos introducidos.</li>
+<li>No contempla blindajes, pactos de empresa ni EREs.</li>
+</ul>
 <div class="divider"></div>
-<h2>6. Contacto para mejoras</h2>
-<p class="note">Si detectas una inconsistencia o quieres proponer una mejora técnica, escríbenos a <a href="mailto:contacto@calculoslaborales.es">contacto@calculoslaborales.es</a>.</p>
-<p class="note">Última actualización: <strong>11 de marzo de 2026</strong></p>
+<h2>8. Calculadoras para autónomos</h2>
+<p class="note"><a href="/tools/cuota-autonomos.html">Cuota</a> · <a href="/tools/calculadora-iva-autonomos.html">IVA</a> · <a href="/tools/retencion-factura-autonomos.html">Retención en factura</a></p>
+<ul class="legal-list">
+<li><strong>Cuota de autónomos 2026:</strong> sistema de cuotas por tramos de rendimientos netos según tabla RETA 2026. La cuota mínima de tarifa plana para nuevos autónomos es orientativa y puede variar según comunidad autónoma y bonificaciones vigentes.</li>
+<li><strong>IVA de autónomos:</strong> se aplica tipo general del 21 % sobre base imponible. La herramienta no contempla tipos reducidos (10 % o 4 %) ni regímenes especiales (recargo de equivalencia, módulos, etc.).</li>
+<li><strong>Retención en factura:</strong> tipo general de retención IRPF del 15 % (7 % para nuevos autónomos en los primeros años). La retención efectiva puede diferir según el tipo de actividad y el perceptor.</li>
+</ul>
+<p class="note">Última revisión de cuotas RETA: enero 2026.</p>
+<div class="divider"></div>
+<h2>9. Calculadora de baja laboral</h2>
+<p class="note"><a href="/tools/calculadora-baja-laboral.html">Ver herramienta</a></p>
+<ul class="legal-list">
+<li><strong>Enfermedad común / accidente no laboral:</strong> del día 4 al 15 a cargo de la empresa (60 % base reguladora); del día 16 en adelante a cargo del INSS al 60 % hasta el día 20, y al 75 % desde el día 21.</li>
+<li><strong>Accidente laboral / enfermedad profesional:</strong> desde el día siguiente al accidente, el 75 % de la base reguladora.</li>
+<li>La base reguladora se calcula sobre la base de cotización por contingencias comunes del mes anterior. La herramienta usa la base introducida directamente.</li>
+</ul>
+<div class="divider"></div>
+<h2>10. Control editorial y actualización</h2>
+<ul class="legal-list">
+<li>Revisamos herramientas y guías cuando hay cambios normativos relevantes (SMI, tramos IRPF, cuotas SS, bases de cotización).</li>
+<li>Indicamos la fecha de última revisión en cada página de herramienta o guía.</li>
+<li>Cuando detectamos un error de fórmula o dato, lo corregimos con prioridad y actualizamos la fecha de revisión.</li>
+<li>El blog editorial documenta cambios normativos con contexto y ejemplos prácticos vinculados a las herramientas.</li>
+</ul>
+<div class="divider"></div>
+<h2>11. Limitaciones y aviso de uso</h2>
+<p class="note">Las herramientas ofrecen una <strong>estimación orientativa</strong>. Los resultados no constituyen asesoramiento jurídico, laboral ni fiscal. Para decisiones con efecto legal o económico relevante, consulta documentación oficial y profesionales cualificados (gestoría, asesoría laboral, abogado).</p>
+<div class="divider"></div>
+<h2>12. Contacto</h2>
+<p class="note">Si detectas una inconsistencia en una fórmula, un dato desactualizado o quieres proponer una mejora, escríbenos a <a href="mailto:contacto@calculoslaborales.es">contacto@calculoslaborales.es</a>. Los errores de cálculo los revisamos con prioridad.</p>
+<p class="note">Última actualización: <strong>8 de abril de 2026</strong></p>
 </section>
 </main>
 <script defer="" src="../assets/js/nav.min.js?v=20260313e"></script>

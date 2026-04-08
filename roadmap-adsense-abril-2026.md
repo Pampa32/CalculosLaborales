@@ -139,7 +139,5 @@ Solo volver a solicitar revision cuando se cumplan estas condiciones:
 - Completado: articulo pilar "Como revisar una nomina paso a paso sin que te enganen" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
 - Completado: satelite "Por que te retienen tanto IRPF en la nomina" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
 - Completado: satelite "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" publicado e integrado en blog, feed, sitemap, guia bruto-neto, tool sueldo-neto y pilar de nomina.
-- Siguiente paso recomendado: publicar el satelite 3 de semana 3 del cluster nomina o iniciar semana 4 (confianza editorial).
-
-## Primera tarea al volver
-- Semana 4: reescribir /legal/sobre-nosotros.html con señales de confianza editorial, equipo y metodologia clara.
+- Completado: semana 4 - sobre-nosotros y metodologia-calculos reescritos en profundidad; blog/index restructurado en clusters.
+- Siguiente paso: subir todo al host y enviar sitemap actualizado a Google Search Console.
