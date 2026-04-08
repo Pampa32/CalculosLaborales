@@ -138,7 +138,8 @@ Solo volver a solicitar revision cuando se cumplan estas condiciones:
 - Completado: semana 2 del cluster despido y finiquito.
 - Completado: articulo pilar "Como revisar una nomina paso a paso sin que te enganen" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
 - Completado: satelite "Por que te retienen tanto IRPF en la nomina" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
-- Siguiente paso recomendado: publicar el satelite "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" para continuar semana 3.
+- Completado: satelite "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" publicado e integrado en blog, feed, sitemap, guia bruto-neto, tool sueldo-neto y pilar de nomina.
+- Siguiente paso recomendado: publicar el satelite 3 de semana 3 del cluster nomina o iniciar semana 4 (confianza editorial).
 
 ## Primera tarea al volver
-- Publicar "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" y enlazarlo con sueldo neto, bruto vs neto y la pieza pilar de revision de nomina.
+- Semana 4: reescribir /legal/sobre-nosotros.html con señales de confianza editorial, equipo y metodologia clara.
