@@ -137,7 +137,8 @@ Solo volver a solicitar revision cuando se cumplan estas condiciones:
 - Completado: articulo "Diferencia entre finiquito e indemnizacion con ejemplos reales" publicado y enlazado con las dos piezas previas y las tools clave del cluster despido.
 - Completado: semana 2 del cluster despido y finiquito.
 - Completado: articulo pilar "Como revisar una nomina paso a paso sin que te enganen" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
-- Siguiente paso recomendado: publicar el satelite "Por que te retienen tanto IRPF en la nomina" para continuar semana 3.
+- Completado: satelite "Por que te retienen tanto IRPF en la nomina" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
+- Siguiente paso recomendado: publicar el satelite "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" para continuar semana 3.
 
 ## Primera tarea al volver
-- Publicar "Por que te retienen tanto IRPF en la nomina" y enlazarlo con IRPF nomina, declarar IRPF 2026 y la pieza pilar de revision de nomina.
+- Publicar "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" y enlazarlo con sueldo neto, bruto vs neto y la pieza pilar de revision de nomina.
