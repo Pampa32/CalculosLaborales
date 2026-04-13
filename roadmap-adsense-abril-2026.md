@@ -138,3 +138,6 @@ Momento de enviar a AdSense:
 - Auditoria de enlaces internos: 0 destinos rotos.
 - Auditoria mobile: 0 HTML sin meta viewport.
 - Pendiente externo (fuera de repo): reenviar sitemap en Search Console, solicitar inspeccion de URLs prioritarias y enviar revision en AdSense.
+- 13/04/2026: revision de AdSense enviada.
+- 13/04/2026: codificacion en produccion estabilizada con cabecera UTF-8 desde .htaccess.
+- 13/04/2026: verificacion en vivo completada sin mojibake en URLs clave.

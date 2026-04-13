@@ -1,5 +1,11 @@
 RewriteEngine On
 
+# Fuerza UTF-8 en todo el contenido de texto para evitar mojibake.
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+	AddCharset UTF-8 .html .htm .css .js .xml .txt .md .json
+</IfModule>
+
 # Fuerza HTTPS y dominio canonico sin www.
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.calculoslaborales\.es$ [NC]
