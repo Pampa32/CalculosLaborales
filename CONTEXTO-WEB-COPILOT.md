@@ -5,9 +5,11 @@ Ultima actualizacion: 2026-04-13
 
 ## Resumen rapido
 - Proyecto: sitio estatico en espanol sobre calculos laborales.
-- Objetivo principal: mejorar calidad editorial y tecnica para aprobar AdSense.
+- Objetivo de negocio final: generar ingresos pasivos de forma sostenible mediante publicidad de AdSense.
+- Objetivo operativo actual: mejorar calidad editorial y tecnica para aprobar AdSense y consolidar indexacion.
 - Roadmap activo: roadmap-adsense-abril-2026.md.
 - Estado actual: fases 1, 2, 3 y 4 tecnicas completadas; revision de AdSense ya enviada.
+- Contexto temporal: web publicada hace aproximadamente 1 mes y medio; indexacion aun parcial.
 
 ## Lo que ya se hizo
 - Fase 1: saneamiento critico de contenido y enlaces.
@@ -33,6 +35,8 @@ Ultima actualizacion: 2026-04-13
 - Priorizar calidad real frente a cantidad de contenido.
 - Evitar errores de codificacion en reemplazos masivos.
 - No abrir lineas nuevas fuera de roadmap mientras haya tareas abiertas del sprint.
+- Mantener foco constante en crecimiento progresivo (indexacion + calidad + monetizacion), evitando cambios impulsivos que rompan estabilidad.
+- Medir cada mejora por impacto en aprobacion de AdSense y salud SEO (rastreo/indexacion/cobertura).
 
 ## Checklist de arranque en una nueva conversacion
 1. Leer roadmap-adsense-abril-2026.md.
@@ -49,3 +53,4 @@ Ultima actualizacion: 2026-04-13
 - Esperar respuesta de AdSense.
 - Mantener estabilidad tecnica mientras dura la revision.
 - Si hay rechazo, preparar iteracion con hallazgos concretos del panel.
+- Seguir con mejora continua semanal: contenido de alto valor, enlazado interno util y control de indexacion en Search Console.
