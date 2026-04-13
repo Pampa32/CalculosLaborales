@@ -1,143 +1,140 @@
-# Roadmap AdSense y crecimiento editorial - abril 2026
+# Roadmap nuevo AdSense - abril 2026
 
-Fecha: 2026-04-08
+Fecha: 2026-04-13
 
-## Objetivo principal
-- Conseguir la aprobacion de AdSense aumentando el valor percibido del sitio.
-- Reforzar senales de utilidad, autoridad editorial e interlinking.
-- Priorizar crecimiento sostenible de trafico organico en verticales con mejor potencial.
+## Objetivo del roadmap
+- Dejar el sitio listo para volver a solicitar revision en AdSense con foco en calidad real, confianza editorial y experiencia de usuario.
+- Reducir al minimo las senales de contenido de poco valor.
 
-## Diagnostico de partida
-- Google ya indexa y muestra impresiones, pero la posicion media y el CTR siguen bajos.
-- El principal bloqueo no parece tecnico: el sitio necesita mas profundidad editorial y mas senales de confianza.
-- Las tools ya tienen una base mucho mejor que antes, por lo que el siguiente salto debe venir de contenido alrededor de ellas.
+## Diagnostico actual resumido
+- El sitio ya tiene buena base tecnica: robots, sitemap, ads.txt y estructura legal publicados.
+- El bloqueo actual es principalmente de calidad percibida:
+  - Hay paginas con profundidad limitada.
+  - Existen errores editoriales puntuales que reducen confianza.
+  - Hay algunos enlaces internos a rutas no publicadas.
 
-## Prioridades del mes
-1. Cluster paro
-2. Cluster despido y finiquito
-3. Cluster nomina y sueldo neto
-4. Refuerzo de confianza editorial
-5. Revisión final de enlazado, snippets y preparacion AdSense
+## Metas de salida (condicion para reenviar a AdSense)
+- Cero enlaces internos rotos o a secciones sin pagina destino.
+- Cero errores editoriales criticos en temas normativos o fiscales.
+- Todas las paginas de negocio con profundidad suficiente y ejemplos utiles.
+- Cobertura clara de autoridad: metodologia, fuentes y revision editorial consistentes.
 
-## Regla de trabajo
-- No abrir nuevas tools durante este sprint salvo necesidad muy justificada.
-- Cada pieza nueva debe enlazar al menos a una tool, una guia relacionada y, cuando tenga sentido, a metodologia o contenido de apoyo.
-- Cada sesion debe terminar con uno de estos estados:
-  - articulo nuevo publicado
-  - mejora sustancial de una tool o guia
-  - capa de interlinking completada
-  - pagina de confianza reforzada
+---
 
-## Plan semanal
+## Fase 1 (dias 1 a 3): saneamiento critico
+Objetivo: quitar fricciones que afectan la evaluacion de calidad.
 
-### Semana 1 - Cluster paro
-Objetivo: convertir paro en el vertical mas fuerte del sitio.
+Tareas:
+1. Corregir errores editoriales criticos en guias de nomina y cambios 2026.
+2. Revisar y corregir terminos impropios o ambiguos en contenido laboral espanol.
+3. Corregir fallos de maquetacion/texto visible (marcado roto, frases incompletas, etc.).
+4. Resolver navegacion a rutas no publicadas:
+  - Crear landing de herramientas si se mantiene el enlace global.
+  - Crear landing de guias si se mantiene el enlace global.
+  - O eliminar/ajustar esos enlaces en plantillas donde aparezcan.
 
-Entregables:
-1. Articulo: Como saber si tienes derecho a paro en 2026
-2. Articulo: Que documentos necesitas para pedir el paro sin errores
-3. Articulo: Motivos por los que el SEPE puede denegarte el paro
-4. Mejora de interlinking en tools de paro
+Definicion de hecho:
+- Lista de errores criticos cerrada al 100%.
+- Navegacion principal sin destinos vacios.
 
-Piezas base del cluster:
-- /tools/calculadora-paro.html
-- /tools/duracion-paro.html
-- /guia/paro-en-espana-guia-completa.html
-- /guia/como-solicitar-el-paro-paso-a-paso.html
-- /guia/plazo-para-solicitar-el-paro.html
-- /guia/reanudar-paro-despues-de-trabajar.html
-- /guia/trabajar-mientras-cobras-el-paro.html
+---
 
-### Semana 2 - Cluster despido y finiquito
-Objetivo: reforzar un vertical de alta intencion y alto valor practico.
+## Fase 2 (dias 4 a 10): refuerzo de paginas debiles
+Objetivo: subir valor real de las URLs con mayor riesgo de "poco valor".
 
-Entregables:
-1. Articulo pilar: Que hacer si te despiden en 2026
-2. Articulo: He firmado el finiquito, puedo reclamar igual
-3. Articulo: Diferencia entre finiquito e indemnizacion con ejemplos reales
-4. Mejora de escenarios y comparativas en tools de despido
+Prioridad alta (primero):
+1. blog/incapacidad-permanente-total-cuanto-se-cobra-como-tramitar.html
+2. blog/como-rellenar-el-modelo-145-paso-a-paso.html
+3. bajas/baja-por-enfermedad.html
 
-Piezas base del cluster:
-- /tools/finiquito.html
-- /tools/calculadora-indemnizacion-despido.html
-- /guia/como-calcular-finiquito-en-espana.html
-- /guia/como-calcular-indemnizacion-por-despido.html
-- /guia/indemnizacion-despido-tabla.html
+Prioridad media (despues):
+4. guia/subvenciones-desempleo-2026.html
+5. guia/derechos-del-trabajador-2026.html
+6. guia/cuando-se-cobra-el-paro-tras-solicitarlo.html
+7. guia/reanudar-paro-despues-de-trabajar.html
+8. guia/declarar-irpf-2026.html
+9. guia/gastos-deducibles-autonomos-iva-irpf.html
+10. guia/como-calcular-base-reguladora-paro.html
 
-### Semana 3 - Cluster nomina y sueldo neto
-Objetivo: ganar trafico evergreen y reforzar la utilidad recurrente del sitio.
+Plantilla de mejora por URL:
+1. Ampliar con secciones practicas y casos limite.
+2. Incluir ejemplo numerico completo y advertencias de interpretacion.
+3. Añadir bloque "errores frecuentes" y "que revisar antes de decidir".
+4. Incluir fuentes oficiales concretas por tema (SEPE, BOE, Seguridad Social, AEAT cuando aplique).
+5. Reforzar enlazado interno con siguiente paso util.
 
-Entregables:
-1. Articulo pilar: Como revisar una nomina paso a paso sin que te enganen
-2. Articulo: Por que te retienen tanto IRPF en la nomina
-3. Articulo: Como pasar de sueldo bruto anual a neto mensual con ejemplos reales
-4. Mejora de escenarios comparativos en tools de nomina
+Definicion de hecho:
+- Las 10 URLs priorizadas quedan reforzadas y revisadas editorialmente.
 
-Piezas base del cluster:
-- /tools/sueldo-neto.html
-- /tools/calculadora-irpf-nomina.html
-- /tools/calculadora-pagas-extra.html
-- /guia/como-leer-una-nomina.html
-- /guia/diferencia-entre-sueldo-bruto-y-neto.html
-- /guia/declarar-irpf-2026.html
+---
 
-### Semana 4 - Confianza editorial y preparacion AdSense
-Objetivo: reforzar senales de autoría, metodologia y cobertura editorial.
+## Fase 3 (dias 11 a 14): confianza y consistencia global
+Objetivo: mostrar senales claras de sitio confiable y mantenido.
 
-Entregables:
-1. Reescritura y ampliacion de /legal/sobre-nosotros.html
-2. Reescritura y ampliacion de /legal/metodologia-calculos.html
-3. Mejora de /blog/index.html para destacar clusters y piezas clave
-4. Auditoria de enlazado interno, snippets y schema
+Tareas:
+1. Unificar pie y bloques de metodologia para que apunten siempre a la pagina correcta de metodologia.
+2. Revisar consistencia de "ultima actualizacion" y fecha de revision en paginas clave.
+3. Verificar que todas las paginas clave incluyen:
+  - autor/editor o entidad responsable
+  - alcance orientativo
+  - enlace a metodologia y fuentes
+4. Revisar que no haya contenido redundante excesivo entre paginas del mismo cluster.
 
-## Proceso de trabajo por sesion
-Cuando retomemos el trabajo en una nueva sesion, seguiremos este orden:
+Definicion de hecho:
+- Sitio consistente en senales editoriales y sin contradicciones visibles.
 
-1. Revisar este roadmap y ubicar en que semana estamos.
-2. Elegir una unica tarea principal de la semana actual.
-3. Antes de escribir, revisar las piezas ya existentes del cluster para no duplicar.
-4. Publicar o editar con foco en una sola intencion de busqueda por pieza.
-5. Añadir interlinking minimo:
-   - enlace a una tool
-   - enlace a una guia relacionada
-   - enlace lateral a otra pieza del cluster si existe
-6. Revisar metadescription, title y bloque FAQ si aplica.
-7. Cerrar la sesion anotando que se ha completado y cual es la siguiente pieza.
+---
 
-## Criterios de calidad de cada articulo nuevo
-- Debe resolver una duda concreta y frecuente.
-- Debe incluir ejemplos o escenarios, no solo explicacion teorica.
-- Debe evitar duplicar literalmente lo ya publicado en la guia principal.
-- Debe terminar enlazando al siguiente paso util para el usuario.
-- Debe tener suficiente profundidad para no parecer una pieza fina o generica.
+## Fase 4 (dias 15 a 18): pre-envio y solicitud
+Objetivo: cerrar checklist y reenviar a AdSense con mayor probabilidad de aprobacion.
 
-## KPI orientativos del sprint
-- 3 articulos pilar nuevos
-- 6 articulos satelite nuevos
-- 3 clusters claramente enlazados
-- 2 paginas de confianza reforzadas
-- Mejora progresiva de impresiones y CTR en Search Console
+Checklist pre-envio:
+1. Validar que ads.txt sigue autorizado y accesible.
+2. Reenviar sitemap en Search Console.
+3. Solicitar inspeccion de las URLs reforzadas.
+4. Confirmar que no quedan rutas importantes como "Descubierta, actualmente sin indexar" dentro de las URLs prioritarias.
+5. Verificar experiencia movil en paginas top.
 
-## Criterio para volver a pedir revision a AdSense
-Solo volver a solicitar revision cuando se cumplan estas condiciones:
-- Hay al menos 8 o 9 piezas nuevas publicadas durante el sprint.
-- Los clusters de paro, despido y nomina tienen enlaces internos claros.
-- Sobre nosotros y metodologia muestran mas autoridad y transparencia.
-- Google ya ha tenido tiempo de rastrear parte del nuevo contenido.
+Momento de enviar a AdSense:
+- Enviar revision solo cuando se complete el 100% de fases 1 y 2, y al menos 80% de fase 3.
 
-## Estado actual
-- Publicado y mejorado: tools principales, bloques editoriales, metadescriptions y correcciones HTML.
-- Completado: cambios subidos a host y sitemap reenviado en Google Search Console.
-- Completado: articulo "Como saber si tienes derecho a paro en 2026" publicado y enlazado desde el cluster paro.
-- Completado: articulo "Que documentos necesitas para pedir el paro sin errores" publicado y enlazado con la guia de solicitud y el primer articulo del cluster.
-- Completado: articulo "Motivos por los que el SEPE puede denegarte el paro" publicado y enlazado con las piezas previas del cluster.
-- Completado: pasada adicional de interlinking en plazo, reanudacion, compatibilidad y tools principales del cluster paro.
-- Completado: articulo "Que hacer si te despiden en 2026" publicado e integrado en blog, feed, sitemap y piezas base del cluster despido.
-- Completado: articulo "He firmado el finiquito, puedo reclamar igual" publicado e integrado con finiquito, despido y derechos del trabajador.
-- Completado: articulo "Diferencia entre finiquito e indemnizacion con ejemplos reales" publicado y enlazado con las dos piezas previas y las tools clave del cluster despido.
-- Completado: semana 2 del cluster despido y finiquito.
-- Completado: articulo pilar "Como revisar una nomina paso a paso sin que te enganen" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
-- Completado: satelite "Por que te retienen tanto IRPF en la nomina" publicado e integrado en blog, feed, sitemap y piezas base del cluster nomina.
-- Completado: satelite "Como pasar de sueldo bruto anual a neto mensual con ejemplos reales" publicado e integrado en blog, feed, sitemap, guia bruto-neto, tool sueldo-neto y pilar de nomina.
-- Completado: semana 4 - sobre-nosotros y metodologia-calculos reescritos en profundidad; blog/index restructurado en clusters.
-- Siguiente paso: subir todo al host y enviar sitemap actualizado a Google Search Console.
+---
+
+## Cadencia de trabajo sugerida
+- Bloques diarios de 90 a 120 minutos.
+- Cada bloque debe cerrar una URL completa o una correccion transversal concreta.
+- No abrir nuevas secciones ni nuevas tools durante este roadmap.
+
+## KPI de control (internos)
+- 10/10 URLs debiles reforzadas.
+- 0 enlaces a rutas no publicadas.
+- 0 errores editoriales criticos detectados en auditoria final.
+- 100% de URLs prioritarias con fecha de revision visible.
+
+## Riesgos a evitar
+- Publicar mas cantidad sin mejorar calidad de fondo.
+- Mezclar terminos o reglas no aplicables a Espana.
+- Reenviar a AdSense antes de que Google vuelva a rastrear contenido clave.
+
+## Estado inicial de este roadmap
+- Iniciado el 13/04/2026.
+- Proximo hito: cerrar Fase 1 completa antes de ampliar nuevo contenido.
+
+## Avance
+- 13/04/2026: Fase 1 ejecutada y cerrada.
+- Correcciones aplicadas en contenido critico de nomina y cambios 2026.
+- Navegacion corregida en posts que apuntaban a rutas no publicadas.
+- Validacion final sin errores en archivos modificados.
+- 13/04/2026: Fase 2 ejecutada y cerrada.
+- 10 URLs prioritarias reforzadas con casos practicos, checklist y fuentes.
+- Validacion cuantitativa: THIN_LT700=0 en el conjunto de paginas de contenido objetivo.
+- 13/04/2026: Fase 3 ejecutada y cerrada.
+- Limpieza global de codificacion completada (sin caracteres de reemplazo residuales en HTML).
+- Enlace "Como hacemos nuestros calculos" unificado a /legal/metodologia-calculos.html en todo el sitio.
+- 13/04/2026: Fase 4 (pre-envio tecnico) ejecutada en local.
+- ads.txt validado y accesible en proyecto.
+- robots.txt con referencia valida a sitemap.xml.
+- sitemap.xml sin duplicados (75 URLs) y con 10/10 URLs prioritarias incluidas.
+- Auditoria de enlaces internos: 0 destinos rotos.
+- Auditoria mobile: 0 HTML sin meta viewport.
+- Pendiente externo (fuera de repo): reenviar sitemap en Search Console, solicitar inspeccion de URLs prioritarias y enviar revision en AdSense.
