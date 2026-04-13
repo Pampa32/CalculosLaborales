@@ -54,3 +54,28 @@ Ultima actualizacion: 2026-04-13
 - Mantener estabilidad tecnica mientras dura la revision.
 - Si hay rechazo, preparar iteracion con hallazgos concretos del panel.
 - Seguir con mejora continua semanal: contenido de alto valor, enlazado interno util y control de indexacion en Search Console.
+
+## Proyeccion de seguimiento (30/60/90 dias)
+- 30 dias:
+  - Objetivo: consolidar rastreo e indexacion.
+  - Senal positiva: suben URLs validas indexadas y bajan "descubierta/rastreada sin indexar".
+  - Senal de riesgo: indexacion plana durante varias semanas.
+- 60 dias:
+  - Objetivo: mejorar visibilidad organica estable.
+  - Senal positiva: crecimiento sostenido de impresiones y mejora de posicion media en URLs clave.
+  - Senal de riesgo: impresiones sin tendencia clara.
+- 90 dias:
+  - Objetivo: convertir visibilidad en trafico mas estable.
+  - Senal positiva: mejora de CTR en queries con muchas impresiones.
+  - Senal de riesgo: CTR estancado pese a mas impresiones.
+
+## Criterio de decision (iterativo)
+- No aplicar cambios estructurales grandes sin datos.
+- Revisar cada 2 semanas Search Console (indexacion, impresiones, CTR, posicion media).
+- Priorizar mejoras de bajo riesgo y alto impacto:
+  - snippets (title/meta) en URLs con impresiones altas y CTR bajo,
+  - refuerzo de enlazado interno hacia URLs objetivo,
+  - actualizacion de contenido con ejemplos/fuentes cuando haya estancamiento.
+
+## Plantilla operativa
+- Usar SEGUIMIENTO-QUINCENAL-KPI.md en cada revision de 14 dias para registrar metricas, decisiones y acciones.
