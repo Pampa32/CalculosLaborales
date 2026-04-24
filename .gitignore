@@ -1,4 +1,49 @@
-calculoslaborales/
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 desktop.ini
+*.tmp
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Build & Dependencies
+node_modules/
+dist/
+build/
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Temporary
+*.bak
+*.tmp
+temp/
+tmp/
+*.swp
+calculoslaborales/
+
+# Audit outputs
+audit-results-*.csv
+audit-report-*.json
