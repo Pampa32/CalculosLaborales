@@ -177,6 +177,47 @@ npx http-server
 - ✅ Breadcrumb: navegación clara en todas las secciones
 - ✅ Mobile: responsive en todos los dispositivos
 
+### Validación automatizada rápida (SEO on-page)
+Puedes ejecutar un guard básico para revisar etiquetas clave en todos los HTML:
+
+```bash
+python scripts/seo_guard.py
+```
+
+El script valida: `title`, `meta description`, `canonical`, `viewport` y presencia de `h1`.
+
+### Checklist técnica de monetización (AdSense)
+Para revisar la base técnica mínima de monetización, ejecuta:
+
+```bash
+python scripts/adsense_readiness.py
+```
+
+Este check verifica:
+- Archivos legales y técnicos esenciales (`ads.txt`, privacidad, cookies, aviso legal).
+- Cobertura por página de scripts de consentimiento y carga de AdSense.
+
+### Auditoría general antes de subir a hosting
+Para ejecutar un repaso completo (SEO + AdSense + enlaces internos + cobertura de sitemap):
+
+```bash
+python scripts/predeploy_audit.py
+```
+
+### Auditoría de “contenido de poco valor” (AdSense)
+Si AdSense reporta *Contenido de poco valor*, puedes priorizar mejoras con:
+
+```bash
+python scripts/content_value_audit.py
+```
+
+Este reporte detecta en blog/guías:
+- páginas con pocas palabras (umbral por defecto: 600),
+- enlazado interno bajo (umbral por defecto: 5 enlaces internos).
+
+Plan recomendado de remediación editorial (prioridades URL a URL):
+- `PLAN-REMEDIACION-ADSENSE-2026-04-24.md`
+
 ### Post-Deploy Monitoring
 1. **Semanas 1-2**: Reenviar sitemap en Search Console, inspeccionar 10-15 URLs
 2. **Semanas 3-4**: Revisar impresiones/CTR, ajustar titles/metas si es necesario
@@ -242,4 +283,3 @@ Proyecto listo para deploy. Todos los archivos validados, encoding correcto, JSO
 ---
 
 **⭐ Si te resulta útil, considera dar una star al repositorio** ⭐
-
