@@ -1,28 +1,26 @@
 # Roadmap AdSense e indexacion - abril 2026
 
 Fecha inicio: 2026-04-13
-Ultima actualizacion: 2026-04-24
+Ultima actualizacion: 2026-04-25
 
 ## Objetivo
 - Mantener el sitio en estado de calidad alta y estable para aumentar probabilidad de aprobacion AdSense.
 - Reducir friccion de rastreo/indexacion con mejoras editoriales y SEO de bajo riesgo.
 
-## Estado actual (24/04/2026)
+## Estado actual (25/04/2026)
 - Fases 1, 2, 3 y 4 del roadmap original: completadas.
 - Revision de AdSense: ya enviada.
-- Ronda adicional de hardening ejecutada y validada:
-  - Normalizacion de fechas visibles y dateModified en contenido blog.
-  - Expansiones FAQPage en articulos con baja densidad de Q&A (objetivo 6 a 8).
-  - Mejora de snippets SEO: titles y meta descriptions dentro de rango operativo.
-  - Eliminacion de duplicidades de meta description detectadas.
-  - CTAs in-content en 19/19 articulos de blog enlazando a herramientas relevantes.
-  - Auditoria tecnica final predeploy: OK (sin mojibake, sin enlaces internos rotos, sin JSON-LD roto, sin desbalances HTML criticos).
+- Hardening editorial + SEO + QA tecnico: completado.
+- Scripts de control disponibles y documentados: `seo_guard.py`, `adsense_readiness.py`, `content_value_audit.py`, `predeploy_audit.py`.
+- Sitemap actualizado, formateado y validado en XML.
+- Pendiente externo: publicar estos cambios en host y ejecutar seguimiento en Search Console.
 
 ## Criterio de listo para subir
 - READY_FOR_DEPLOY=YES en auditoria tecnica local.
 - Canonical/meta/title presentes y coherentes en HTML.
 - 0 errores de parseo en scripts JSON-LD.
 - 0 enlaces internos rotos detectados.
+- `sitemap.xml` parseable y consistente con el arbol publicado.
 
 ## Fase 5 (post-envio): contingencia y mejora continua
 Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo AdSense.
@@ -39,7 +37,7 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 1. Priorizar 10 URLs con mas impresiones y CTR bajo para ajustar title/meta.
 2. Reforzar enlazado interno desde home, blog index y hubs tematicos.
 3. Publicar 2 a 3 piezas de alto valor conectadas a herramientas clave.
-4. Validar logs de cobertura cada 14 dias en SEGUIMIENTO-QUINCENAL-KPI.md.
+4. Validar logs de cobertura cada 14 dias en `SEGUIMIENTO-QUINCENAL-KPI.md`.
 
 ### Bloque C - si AdSense rechaza por contenido de poco valor
 1. Extraer motivo exacto del panel y mapearlo a URLs afectadas.
@@ -65,4 +63,5 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 
 ## Registro de avance resumido
 - 2026-04-13: fases 1 a 4 completadas y revision de AdSense enviada.
-- 2026-04-24: hardening extra completo (editorial + SEO + QA tecnico) y estado listo para deploy.
+- 2026-04-24: hardening extra completo (editorial + SEO + QA tecnico).
+- 2026-04-25: limpieza documental, sitemap legible/validado y estado final pre-subida a host.

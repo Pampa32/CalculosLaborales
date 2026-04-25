@@ -2,24 +2,30 @@
 
 Fecha: **24 de abril de 2026**
 Ventana estimada para nueva solicitud de revisión: **a partir del 28 de abril de 2026**.
+Ultima revision de estado: **25 de abril de 2026**.
 
 ## Objetivo
 Subir el valor percibido de contenido en URLs estratégicas con mejoras editoriales **concretas, originales y útiles** para usuario real.
 
 ## Top 10 URLs priorizadas (primera oleada)
 
-| Prioridad | URL | Señal actual | Mejora obligatoria (mínimo) |
+| Prioridad | URL | Mejora obligatoria (minimo) | Estado |
 |---|---|---|---|
-| 1 | `/guia/como-calcular-indemnizacion-por-despido.html` | Cobertura corta para tema YMYL | Añadir 3 casos reales completos (procedente/improcedente/nulo) con cifras, tabla comparativa por antigüedad y sección "errores frecuentes". |
-| 2 | `/guia/derechos-del-trabajador-2026.html` | Página amplia pero genérica | Reescribir en formato checklist accionable + mini flujos (despido, impago, baja) + documentos necesarios por trámite. |
-| 3 | `/guia/reanudar-paro-despues-de-trabajar.html` | Puede solaparse con otras del paro | Añadir diagrama de decisiones (reanudar vs nueva prestación), 5 supuestos reales y enlaces a SEPE con contexto. |
-| 4 | `/guia/como-solicitar-el-paro-paso-a-paso.html` | Riesgo de contenido "how-to" estándar | Añadir captura/explicación de errores frecuentes de solicitud, tiempos reales, y bloque "si te lo deniegan" con pasos. |
-| 5 | `/guia/gastos-deducibles-autonomos-iva-irpf.html` | Tema competitivo, requiere profundidad | Separar por gasto (sí/no/depende), prueba documental exigible y ejemplos de deducción parcial. |
-| 6 | `/blog/teletrabajo-derechos-2026.html` | Artículo informativo de baja profundidad | Añadir casos de conflicto (equipos, gastos, horario), plantillas de comunicación y resolución práctica paso a paso. |
-| 7 | `/guia/como-leer-una-nomina.html` | Útil pero mejorable en valor diferencial | Incluir nómina comentada línea a línea (ejemplo real anonimizado) + checklist descargable. |
-| 8 | `/guia/como-se-pagan-las-horas-extra.html` | Tema potencialmente repetido | Añadir calculadora embebida o simulador simple y 4 escenarios (normal/festivo/nocturno/convenio). |
-| 9 | `/guia/cuanto-se-cobra-el-primer-mes-de-paro.html` | Intención muy concreta | Añadir explicación por fechas de alta/baja, primer pago parcial, retención y ejemplo con calendario real. |
-| 10 | `/guia/como-calcular-base-reguladora-paro.html` | Puede parecer puente hacia calculadora | Añadir 2 métodos de cálculo (manual y rápido), plantilla de hoja de cálculo y verificación de inconsistencias. |
+| 1 | `/guia/como-calcular-indemnizacion-por-despido.html` | 3 casos reales + comparativa + errores frecuentes | Completado |
+| 2 | `/guia/derechos-del-trabajador-2026.html` | Checklist accionable + mini flujos + documentos por tramite | Completado |
+| 3 | `/guia/reanudar-paro-despues-de-trabajar.html` | Decision reanudar vs nuevo derecho + supuestos reales + contexto SEPE | Completado |
+| 4 | `/guia/como-solicitar-el-paro-paso-a-paso.html` | Errores frecuentes + tiempos + bloque de denegacion | Completado |
+| 5 | `/guia/gastos-deducibles-autonomos-iva-irpf.html` | Matriz si/no/depende + prueba documental + ejemplos | Completado |
+| 6 | `/blog/teletrabajo-derechos-2026.html` | Casos de conflicto + plantillas de comunicacion | Completado |
+| 7 | `/guia/como-leer-una-nomina.html` | Nomina comentada + checklist descargable | Completado |
+| 8 | `/guia/como-se-pagan-las-horas-extra.html` | Simulador/casos por escenario + bloque practico de reclamacion | Parcial |
+| 9 | `/guia/cuanto-se-cobra-el-primer-mes-de-paro.html` | Ejemplo por fechas + primer pago parcial + retencion | Pendiente |
+| 10 | `/guia/como-calcular-base-reguladora-paro.html` | Metodo manual + metodo rapido + verificacion | Pendiente |
+
+## Siguiente bloque operativo (antes de nueva solicitud)
+1. Cerrar prioridad 9 con ejemplo completo y calendario real.
+2. Cerrar prioridad 10 con doble metodo de calculo y checklist de validacion.
+3. Completar prioridad 8 con escenarios numericos minimos por convenio/tipo.
 
 ## Criterios editoriales mínimos por URL (para pasar revisión)
 1. **Originalidad verificable**: incluir ejemplos propios numéricos y/o tablas de elaboración propia.
@@ -28,10 +34,9 @@ Subir el valor percibido de contenido en URLs estratégicas con mejoras editoria
 4. **No thin affiliate pattern**: evitar texto de relleno; cada bloque debe aportar decisión, cálculo o documento.
 5. **Enlazado útil**: mínimo 6 enlaces internos relevantes (no solo menú global).
 
-## Plan de ejecución (72 horas)
-- **Día 1**: actualizar prioridades 1–3.
-- **Día 2**: actualizar prioridades 4–7.
-- **Día 3**: actualizar prioridades 8–10 + revisión transversal de títulos/H2/FAQ.
+## Regla de cierre
+- No solicitar nueva revision hasta que 9 y 10 esten en estado **Completado** y 8 pase a **Completado**.
+- Tras esos cierres, ejecutar auditoria tecnica completa y revisar snippets de URLs con mas impresiones y CTR bajo.
 
 ## Gate de publicación
 Antes de reenviar revisión en AdSense:

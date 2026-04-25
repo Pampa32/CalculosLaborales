@@ -1,14 +1,14 @@
 # Contexto Web CalculosLaborales (para nuevas sesiones)
 
 Fecha de inicio: 2026-04-13
-Ultima actualizacion: 2026-04-24
+Ultima actualizacion: 2026-04-25
 
 ## Resumen rapido
 - Proyecto: sitio estatico en espanol sobre calculos laborales.
 - Objetivo de negocio final: generar ingresos pasivos de forma sostenible mediante publicidad de AdSense.
 - Objetivo operativo actual: mantener calidad editorial y tecnica alta para facilitar aprobacion AdSense y consolidar indexacion.
 - Roadmap activo: roadmap-adsense-abril-2026.md.
-- Estado actual: fases 1 a 4 completadas + ronda adicional de hardening editorial/SEO/QA cerrada; revision de AdSense ya enviada.
+- Estado actual: fases 1 a 4 completadas + hardening editorial/SEO/QA cerrado; revision de AdSense ya enviada.
 - Contexto temporal: web publicada hace aproximadamente 1 mes y medio; indexacion aun parcial.
 
 ## Lo que ya se hizo
@@ -23,11 +23,15 @@ Ultima actualizacion: 2026-04-24
   - Insercion de CTA in-content en 19/19 articulos de blog.
   - Correccion JSON-LD puntual en tools/finiquito.html.
   - Auditoria tecnica final sin hallazgos bloqueantes (ready for deploy).
+- Actualizacion 25/04/2026:
+  - Limpieza de documentos operativos (roadmap/contexto/planes) para evitar tareas ya cerradas en estado pendiente.
+  - `sitemap.xml` reformateado completo a formato legible y parseo XML validado.
+  - Ajuste de frecuencia en URLs nuevas del cluster bajas a `monthly`.
 - Correccion de codificacion en produccion:
   - Se configuro UTF-8 por cabecera HTTP en .htaccess.
   - Verificado en vivo: content-type con charset UTF-8 y sin mojibake en URLs clave.
 
-## Estado de produccion validado (13/04/2026)
+## Estado de produccion validado (ultimo check completo: 13/04/2026)
 - Home: 200 OK, UTF-8, sin mojibake.
 - legal/metodologia-calculos.html: 200 OK, UTF-8, sin mojibake.
 - blog/como-rellenar-el-modelo-145-paso-a-paso.html: 200 OK, UTF-8, sin mojibake.
@@ -65,6 +69,12 @@ Ultima actualizacion: 2026-04-24
 - Si hay rechazo de AdSense, iterar con el motivo exacto del panel.
 - Seguir mejora continua quincenal (contenido util + enlazado interno + CTR snippets).
 
+## Documentacion operativa activa
+- `roadmap-adsense-abril-2026.md`: roadmap y decisiones del sprint actual.
+- `PLAN-REMEDIACION-ADSENSE-2026-04-24.md`: estado por URL del bloque "contenido de poco valor".
+- `SEGUIMIENTO-QUINCENAL-KPI.md`: plantilla de seguimiento cada 14 dias.
+- `roadmap-contenido-mayo-2026.md`: archivo historico (referencia), no usar como plan activo del sprint AdSense.
+
 ## Proyeccion de seguimiento (30/60/90 dias)
 - 30 dias:
   - Objetivo: consolidar rastreo e indexacion.
@@ -87,12 +97,13 @@ Ultima actualizacion: 2026-04-24
   - refuerzo de enlazado interno hacia URLs objetivo,
   - actualizacion de contenido con ejemplos/fuentes cuando haya estancamiento.
 
-## Estado tecnico validado local (24/04/2026)
+## Estado tecnico validado local (25/04/2026)
 - READY_FOR_DEPLOY=YES.
 - Sin mojibake detectado.
 - Sin enlaces internos rotos detectados.
 - Sin errores de parseo JSON-LD detectados.
 - Sin faltantes de title/meta/canonical en HTML auditado.
+- `sitemap.xml` parseable y legible (sin bloqueos tecnicos).
 
 ## Plantilla operativa
 - Usar SEGUIMIENTO-QUINCENAL-KPI.md en cada revision de 14 dias para registrar metricas, decisiones y acciones.
