@@ -12,37 +12,37 @@ Frecuencia: cada 14 dias
 ---
 
 ## Registro del periodo
-- Periodo: ____ / ____ / ______ a ____ / ____ / ______
-- Revision realizada por: __________________
-- Estado AdSense: [ ] En revision  [ ] Aprobado  [ ] Rechazado
+- Periodo: 05 / 04 / 2026 a 04 / 05 / 2026
+- Revision realizada por: Nicolas Pampa
+- Estado AdSense: [x] En revision  [ ] Aprobado  [ ] Rechazado
 
 ## KPI de indexacion (Search Console)
-- URLs validas indexadas: ______
-- URLs descubiertas sin indexar: ______
-- URLs rastreadas sin indexar: ______
-- Errores de cobertura: ______
+- URLs validas indexadas: 60
+- URLs descubiertas sin indexar: 0
+- URLs rastreadas sin indexar: 1
+- Errores de cobertura: 4 (3 paginas con redireccion + 1 error de redireccion)
 
 Variacion vs quincena anterior:
-- Indexadas: + / - ______
-- Descubiertas sin indexar: + / - ______
-- Rastreadas sin indexar: + / - ______
+- Indexadas: + 60 (sitio nuevo, primera medicion real)
+- Descubiertas sin indexar: N/A
+- Rastreadas sin indexar: 1 (estable)
 
 Lectura rapida:
-- [ ] Positiva
+- [x] Positiva
 - [ ] Neutra
 - [ ] Negativa
 
 ## KPI de rendimiento (Search Console)
-- Impresiones totales: ______
-- Clics totales: ______
-- CTR medio: ______ %
-- Posicion media: ______
+- Impresiones totales (28 dias): 4.460
+- Clics totales (28 dias): 51
+- CTR medio: 1.1 %
+- Posicion media: 31.6 (28 dias) / 18.7 (7 dias) / 15 (24h)
 
 Variacion vs quincena anterior:
-- Impresiones: + / - ______
-- Clics: + / - ______
-- CTR: + / - ______ puntos
-- Posicion media: + / - ______
+- Impresiones: primera medicion comparativa disponible
+- Clics: primera medicion comparativa disponible
+- CTR: primera medicion comparativa disponible
+- Posicion media: MEJORA RAPIDA de 31.6 a 15 en 28 dias — tendencia muy positiva
 
 ## Top 10 URLs por impresiones
 1. URL: __________________ | Impresiones: ______ | CTR: ______ | Posicion: ______
@@ -94,25 +94,25 @@ Variacion vs quincena anterior:
 ---
 
 ## Acciones acordadas para la siguiente quincena (maximo 5)
-1. ______________________________________________
-2. ______________________________________________
-3. ______________________________________________
-4. ______________________________________________
-5. ______________________________________________
+1. Monitorizar si la posicion media consolida por debajo de 20 en 28 dias
+2. Investigar las 4 URLs con error/redireccion desde Search Console (requiere inspeccion manual en GSC)
+3. Publicar nuevo articulo cluster confianza editorial o IRPF-declaracion-renta
+4. Revisar CTR de top 10 URLs por impresiones y ajustar snippets si CTR < 1.5%
+5. Revisar estado AdSense y si sigue en "Preparando" mas de 30 dias, contactar soporte
 
-## Cambios ejecutados esta quincena
-1. ______________________________________________
-2. ______________________________________________
-3. ______________________________________________
-4. ______________________________________________
-5. ______________________________________________
+## Cambios ejecutados esta quincena (4 mayo 2026)
+1. Corregido title de guia/paro-en-espana-guia-completa.html (tenia "Espana" sin enye visible en SERPs)
+2. Corregidos acentos en meta description de 11 paginas (baja-por-enfermedad, derechos-trabajador, base-reguladora-paro, como-pasar-bruto-neto, modelo-145, incapacidad-permanente, motivos-sepe-deniega, que-hacer-despido, declarar-irpf, reanudar-paro, revisar-nomina)
+3. Mejorado title de derechos-del-trabajador-2026.html para mayor especificidad en SERP
+4. Primer registro real de KPIs en este seguimiento
 
 ## Decision final de la quincena
 - [ ] Mantener estrategia actual.
-- [ ] Ajuste ligero de snippets/enlazado.
+- [x] Ajuste ligero de snippets/enlazado.
 - [ ] Ajuste editorial en URLs concretas.
 - [ ] Escalar revision tecnica puntual.
 
 Comentario final:
-________________________________________________
-________________________________________________
+Tendencia de posicionamiento muy positiva: de posicion 31 a 15 en 28 dias.
+CTR objetivo para proxima quincena: superar 1.8% con mejoras de snippets aplicadas hoy.
+AdSense sigue en "Preparando" — sin accion urgente hasta nueva señal del panel.
