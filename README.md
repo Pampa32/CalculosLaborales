@@ -34,7 +34,7 @@ CalculosLaborales es un sitio web especializado en **cálculos y consultas labor
 - **Calculadora Pagas Extra**: distribuye pagas según convenio colectivo
 
 ### 📚 Secciones de Contenido
-- **Blog** (19+ artículos): análisis profundos de temas laborales
+- **Blog** (20+ artículos): análisis profundos de temas laborales
 - **Guías** (15+ guías): pasos prácticos y procedimientos
 - **Bajas Laborales**: enfermedad, maternidad, accidente laboral
 - **Desempleo**: paro, compatibilidad, cálculos
@@ -55,7 +55,7 @@ CalculosLaborales es un sitio web especializado en **cálculos y consultas labor
 
 ```
 CalculosLaborales/
-├── blog/                      # Artículos de blog (19 archivos)
+├── blog/                      # Artículos de blog (20 archivos)
 ├── tools/                     # Calculadoras interactivas (19 herramientas)
 ├── guia/                      # Guías prácticas (15+ archivos)
 ├── bajas/                     # Sección bajas laborales

@@ -1,7 +1,7 @@
 # Contexto Web CalculosLaborales (para nuevas sesiones)
 
 Fecha de inicio: 2026-04-13
-Ultima actualizacion: 2026-04-25
+Ultima actualizacion: 2026-05-04
 
 ## Resumen rapido
 - Proyecto: sitio estatico en espanol sobre calculos laborales.
@@ -23,10 +23,13 @@ Ultima actualizacion: 2026-04-25
   - Insercion de CTA in-content en 19/19 articulos de blog.
   - Correccion JSON-LD puntual en tools/finiquito.html.
   - Auditoria tecnica final sin hallazgos bloqueantes (ready for deploy).
-- Actualizacion 25/04/2026:
-  - Limpieza de documentos operativos (roadmap/contexto/planes) para evitar tareas ya cerradas en estado pendiente.
-  - `sitemap.xml` reformateado completo a formato legible y parseo XML validado.
-  - Ajuste de frecuencia en URLs nuevas del cluster bajas a `monthly`.
+- Actualizacion 04/05/2026 (sesion activa):
+  - Correccion de acentos en titles y meta descriptions de 45 paginas (2 commits).
+  - Actualizacion de lastmod en sitemap para 9 paginas.
+  - Publicacion nuevo articulo cluster E-E-A-T: `blog/contrato-de-trabajo-que-revisar-antes-de-firmar.html`.
+  - Feed.xml, blog/index.html y sitemap.xml actualizados.
+  - Eliminados documentos obsoletos: `PLAN-REMEDIACION-ADSENSE-2026-04-24.md` y `roadmap-contenido-mayo-2026.md`.
+  - Estado AdSense: "Preparando" (en revision). Proyecto pendiente de subir al host.
 - Correccion de codificacion en produccion:
   - Se configuro UTF-8 por cabecera HTTP en .htaccess.
   - Verificado en vivo: content-type con charset UTF-8 y sin mojibake en URLs clave.
@@ -63,17 +66,17 @@ Ultima actualizacion: 2026-04-25
 6. Continuar desde el siguiente paso del roadmap o desde el ultimo pedido del usuario.
 
 ## Proximos pasos recomendados
-- Publicar en host el estado actual validado.
+- Confirmar que el host esta publicado y ads.txt responde con 200.
 - Reenviar sitemap y solicitar inspeccion de 10-15 URLs clave en Search Console.
-- Mantener estabilidad tecnica mientras dura la revision.
-- Si hay rechazo de AdSense, iterar con el motivo exacto del panel.
-- Seguir mejora continua quincenal (contenido util + enlazado interno + CTR snippets).
+- Mantener estabilidad tecnica mientras dura la revision de AdSense.
+- Proxima revision quincenal de KPI: 18-19 de mayo de 2026.
+- Si hay rechazo de AdSense, consultar Plan C o D en `roadmap-adsense-abril-2026.md`.
+- Si no mejora la indexacion, consultar Plan B en `roadmap-adsense-abril-2026.md`.
+- Articulos pendientes de refuerzo (si AdSense rechaza): `/guia/cuanto-se-cobra-el-primer-mes-de-paro.html`, `/guia/como-calcular-base-reguladora-paro.html`, `/guia/como-se-pagan-las-horas-extra.html`.
 
 ## Documentacion operativa activa
-- `roadmap-adsense-abril-2026.md`: roadmap y decisiones del sprint actual.
-- `PLAN-REMEDIACION-ADSENSE-2026-04-24.md`: estado por URL del bloque "contenido de poco valor".
+- `roadmap-adsense-abril-2026.md`: roadmap, decisiones del sprint y planes de contingencia (B/C/D).
 - `SEGUIMIENTO-QUINCENAL-KPI.md`: plantilla de seguimiento cada 14 dias.
-- `roadmap-contenido-mayo-2026.md`: archivo historico (referencia), no usar como plan activo del sprint AdSense.
 
 ## Proyeccion de seguimiento (30/60/90 dias)
 - 30 dias:
