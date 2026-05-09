@@ -1,7 +1,7 @@
 # Contexto Web CalculosLaborales (para nuevas sesiones)
 
 Fecha de inicio: 2026-04-13
-Ultima actualizacion: 2026-05-04
+Ultima actualizacion: 2026-05-09
 
 ## Resumen rapido
 - Proyecto: sitio estatico en espanol sobre calculos laborales.
@@ -30,6 +30,12 @@ Ultima actualizacion: 2026-05-04
   - Feed.xml, blog/index.html y sitemap.xml actualizados.
   - Eliminados documentos obsoletos: `PLAN-REMEDIACION-ADSENSE-2026-04-24.md` y `roadmap-contenido-mayo-2026.md`.
   - Estado AdSense: "Preparando" (en revision). Proyecto pendiente de subir al host.
+- Actualizacion 09/05/2026 (sesion activa):
+  - Revisada cobertura en Search Console: 63 URLs indexadas, 17 en "Descubierta, actualmente sin indexar" y 1 en "Rastreada, actualmente sin indexar".
+  - Aplicada micro-ronda de interlinking en `index.html`, `blog/index.html` y `bajas/index.html` para reforzar rastreo de URLs descubiertas.
+  - Actualizados `lastmod` de `/`, `/blog/` y `/bajas/` en `sitemap.xml`.
+  - Actualizada la fecha visible de revision en home a mayo 2026.
+  - QA predeploy final completado sin errores en los archivos tocados. Sitio listo para subir al host.
 - Correccion de codificacion en produccion:
   - Se configuro UTF-8 por cabecera HTTP en .htaccess.
   - Verificado en vivo: content-type con charset UTF-8 y sin mojibake en URLs clave.
@@ -66,8 +72,8 @@ Ultima actualizacion: 2026-05-04
 6. Continuar desde el siguiente paso del roadmap o desde el ultimo pedido del usuario.
 
 ## Proximos pasos recomendados
-- Confirmar que el host esta publicado y ads.txt responde con 200.
-- Reenviar sitemap y solicitar inspeccion de 10-15 URLs clave en Search Console.
+- Subir cambios al host y confirmar que ads.txt responde con 200.
+- Reenviar sitemap y solicitar inspeccion de 8 URLs clave en Search Console.
 - Mantener estabilidad tecnica mientras dura la revision de AdSense.
 - Proxima revision quincenal de KPI: 18-19 de mayo de 2026.
 - Si hay rechazo de AdSense, consultar Plan C o D en `roadmap-adsense-abril-2026.md`.
@@ -107,6 +113,12 @@ Ultima actualizacion: 2026-05-04
 - Sin errores de parseo JSON-LD detectados.
 - Sin faltantes de title/meta/canonical en HTML auditado.
 - `sitemap.xml` parseable y legible (sin bloqueos tecnicos).
+
+## Estado tecnico validado local (09/05/2026)
+- Sin errores en `index.html`, `blog/index.html`, `bajas/index.html` y `sitemap.xml` tras la micro-ronda de interlinking.
+- `lastmod` sincronizado en sitemap para `/`, `/blog/` y `/bajas/`.
+- Home actualizada con fecha visible de revision en mayo 2026.
+- Predeploy listo para subida a host.
 
 ## Plantilla operativa
 - Usar SEGUIMIENTO-QUINCENAL-KPI.md en cada revision de 14 dias para registrar metricas, decisiones y acciones.

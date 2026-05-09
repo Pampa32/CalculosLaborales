@@ -116,3 +116,24 @@ Comentario final:
 Tendencia de posicionamiento muy positiva: de posicion 31 a 15 en 28 dias.
 CTR objetivo para proxima quincena: superar 1.8% con mejoras de snippets aplicadas hoy.
 AdSense sigue en "Preparando" — sin accion urgente hasta nueva señal del panel.
+
+---
+
+## Nota operativa 09 / 05 / 2026
+- Estado Search Console observado:
+	- URLs validas indexadas: 63
+	- URLs descubiertas sin indexar: 17
+	- URLs rastreadas sin indexar: 1
+	- Impresiones totales (28 dias): 7,07 mil
+	- Clics totales (28 dias): 79
+	- CTR medio: 1,1 %
+	- Posicion media: 26,3 (28 dias) / 15,6 (24h)
+- Acciones ejecutadas en predeploy:
+	1. Refuerzo de enlazado interno en `index.html`, `blog/index.html` y `bajas/index.html` hacia URLs en estado "Descubierta".
+	2. Actualizacion de `lastmod` en `sitemap.xml` para `/`, `/blog/` y `/bajas/`.
+	3. Actualizacion de fecha visible de revision en home.
+	4. QA final sin errores en archivos modificados.
+- Siguiente accion operativa al publicar:
+	1. Reenviar sitemap.
+	2. Solicitar inspeccion manual de 8 URLs prioritarias.
+	3. Esperar 7-10 dias antes de reevaluar cobertura.

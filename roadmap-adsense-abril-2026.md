@@ -1,13 +1,13 @@
 # Roadmap AdSense e indexacion
 
 Fecha inicio: 2026-04-13
-Ultima actualizacion: 2026-05-04
+Ultima actualizacion: 2026-05-09
 
 ## Objetivo
 - Mantener el sitio en estado de calidad alta y estable para aumentar probabilidad de aprobacion AdSense.
 - Reducir friccion de rastreo/indexacion con mejoras editoriales y SEO de bajo riesgo.
 
-## Estado actual (04/05/2026)
+## Estado actual (09/05/2026)
 - Fases 1 a 4 del roadmap original: completadas.
 - Hardening editorial + SEO + QA tecnico: completado.
 - Revision de AdSense: enviada (estado "Preparando").
@@ -16,7 +16,12 @@ Ultima actualizacion: 2026-05-04
   - Actualizacion de lastmod en sitemap para 9 paginas modificadas (commit 2f28b8c).
   - Publicacion nuevo articulo cluster confianza/E-E-A-T: `blog/contrato-de-trabajo-que-revisar-antes-de-firmar.html` (commits 42ff3d9 y fb4f987).
   - Actualizacion de feed.xml, blog/index.html y sitemap.xml con el nuevo articulo.
-- KPI a 04/05/2026: 60 URLs indexadas, posicion media 15, 4.460 impresiones (28d), CTR 1.1%.
+- Sesion 09/05/2026 completada:
+   - Analisis de cobertura en Search Console: 63 URLs indexadas, 17 URLs en "Descubierta, actualmente sin indexar" y 1 URL "Rastreada, actualmente sin indexar".
+   - Micro-ronda de interlinking aplicada en home, index del blog y hub de bajas para empujar rastreo de URLs descubiertas.
+   - Actualizacion de `lastmod` en sitemap para `/`, `/blog/` y `/bajas/` tras los cambios de interlinking.
+   - Actualizacion de fecha visible de ultima revision en home a mayo 2026.
+- KPI a 09/05/2026: 63 URLs indexadas, 7,07 mil impresiones (28d), 79 clics (28d), CTR 1,1 %, posicion media 26,3 (28d) / 15,6 (24h).
 - Proyecto subido al host: pendiente (usuario lo hace manualmente).
 - Sitemap reenviado a Search Console: pendiente (usuario lo hace tras subir).
 
@@ -32,7 +37,7 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 
 ### Bloque A - 7 a 14 dias
 1. Reenviar sitemap en Search Console.
-2. Solicitar inspeccion de 10 a 15 URLs clave reforzadas.
+2. Solicitar inspeccion de 8 URLs clave reforzadas tras la micro-ronda de interlinking.
 3. Medir cobertura en Search Console:
    - Descubierta, actualmente sin indexar
    - Rastreada, actualmente sin indexar
@@ -71,6 +76,7 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 - 2026-04-24: hardening extra completo (editorial + SEO + QA tecnico).
 - 2026-04-25: limpieza documental, sitemap legible/validado y estado final pre-subida a host.
 - 2026-05-04: correccion de 45 acentos/titles, actualizacion lastmod sitemap, publicacion articulo confianza editorial, limpieza de documentos obsoletos.
+- 2026-05-09: analisis de indexacion en Search Console, refuerzo de interlinking en `/`, `/blog/` y `/bajas/`, actualizacion de `lastmod` y predeploy validado sin errores.
 
 ---
 
