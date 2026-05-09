@@ -7,6 +7,11 @@ Ultima actualizacion: 2026-05-09
 - Mantener el sitio en estado de calidad alta y estable para aumentar probabilidad de aprobacion AdSense.
 - Reducir friccion de rastreo/indexacion con mejoras editoriales y SEO de bajo riesgo.
 
+## Situacion operativa resumida
+- La siguiente accion inmediata fuera del repo es subir el sitio al host.
+- Despues de publicar: reenviar sitemap y solicitar inspeccion manual de 8 URLs prioritarias.
+- Hasta la siguiente revision no conviene tocar estructura global, plantillas ni lanzar cambios masivos.
+
 ## Estado actual (09/05/2026)
 - Fases 1 a 4 del roadmap original: completadas.
 - Hardening editorial + SEO + QA tecnico: completado.
@@ -25,12 +30,43 @@ Ultima actualizacion: 2026-05-09
 - Proyecto subido al host: pendiente (usuario lo hace manualmente).
 - Sitemap reenviado a Search Console: pendiente (usuario lo hace tras subir).
 
-## Criterio de listo para subir
-- READY_FOR_DEPLOY=YES en auditoria tecnica local.
-- Canonical/meta/title presentes y coherentes en HTML.
-- 0 errores de parseo en scripts JSON-LD.
-- 0 enlaces internos rotos detectados.
-- `sitemap.xml` parseable y consistente con el arbol publicado.
+## Checklist inmediata tras subir al host
+1. Confirmar que `/`, `/blog/`, `/bajas/`, `/sitemap.xml`, `/robots.txt` y `/ads.txt` responden bien en produccion.
+2. Reenviar `sitemap.xml` en Search Console.
+3. Solicitar inspeccion manual de estas 8 URLs:
+   - `/blog/como-saber-si-tienes-derecho-a-paro-2026.html`
+   - `/blog/que-documentos-necesitas-para-pedir-el-paro-sin-errores.html`
+   - `/blog/motivos-por-los-que-el-sepe-puede-denegarte-el-paro.html`
+   - `/blog/como-revisar-una-nomina-paso-a-paso-sin-que-te-enganen.html`
+   - `/blog/como-pasar-de-sueldo-bruto-anual-a-neto-mensual-con-ejemplos-reales.html`
+   - `/blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html`
+   - `/blog/diferencia-entre-finiquito-e-indemnizacion-con-ejemplos-reales.html`
+   - `/blog/cuanto-paga-un-autonomo-seguridad-social-2026.html`
+4. No tocar arquitectura, menus ni estructura de enlaces durante 7-10 dias.
+
+## Proxima revision programada
+- Ventana objetivo: 19/05/2026 a 24/05/2026.
+- Objetivo: medir si la micro-ronda de interlinking y la reindexacion manual han reducido friccion de rastreo.
+
+### Que revisar en Search Console
+1. URLs validas indexadas.
+2. URLs en "Descubierta, actualmente sin indexar".
+3. URLs en "Rastreada, actualmente sin indexar".
+4. Impresiones, clics, CTR y posicion media en 28 dias.
+5. Estado de las 8 URLs inspeccionadas manualmente.
+6. Si persisten los errores/redirecciones ya vistos en cobertura.
+
+### Senales de exito
+- Las indexadas suben por encima de 63.
+- "Descubierta, actualmente sin indexar" baja de 17.
+- Alguna de las 8 URLs reforzadas pasa a indexada o al menos muestra ultimo rastreo.
+- La posicion media de 28 dias mejora o se mantiene mientras suben impresiones.
+
+### Senales de alerta
+- Las indexadas siguen planas.
+- "Descubierta" no baja o incluso sube.
+- Ninguna de las 8 URLs reforzadas muestra avance de rastreo.
+- El CTR cae con mas impresiones en URLs ya visibles.
 
 ## Fase 5 (post-envio): contingencia y mejora continua
 Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo AdSense.
@@ -46,7 +82,7 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 ### Bloque B - si hay estancamiento de indexacion
 1. Priorizar 10 URLs con mas impresiones y CTR bajo para ajustar title/meta.
 2. Reforzar enlazado interno desde home, blog index y hubs tematicos.
-3. Publicar 2 a 3 piezas de alto valor conectadas a herramientas clave.
+3. Publicar 1 pieza de alto valor conectada a herramientas clave, no volumen masivo.
 4. Validar logs de cobertura cada 14 dias en `SEGUIMIENTO-QUINCENAL-KPI.md`.
 
 ### Bloque C - si AdSense rechaza por contenido de poco valor
@@ -78,19 +114,14 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 - 2026-05-04: correccion de 45 acentos/titles, actualizacion lastmod sitemap, publicacion articulo confianza editorial, limpieza de documentos obsoletos.
 - 2026-05-09: analisis de indexacion en Search Console, refuerzo de interlinking en `/`, `/blog/` y `/bajas/`, actualizacion de `lastmod` y predeploy validado sin errores.
 
----
-
-## Plan B — Si no mejora la indexacion en 30 dias
-
-Senal de alerta: en la revision del 19/05/2026, si las URLs indexadas no aumentan o la posicion media no baja de 12.
-
-1. Identificar en Search Console las URLs en estado "Descubierta, actualmente sin indexar" o "Rastreada, actualmente sin indexar".
-2. Revisar si tienen enlazado interno suficiente (minimo 3 enlaces internos entrantes).
-3. Reforzar enlazado desde home e index del blog hacia las URLs afectadas.
-4. Revisar si el contenido de esas URLs supera 600 palabras con valor real (no relleno).
-5. Publicar 1 articulo nuevo por quincena conectado a las URLs sin indexar (refuerzo de cluster).
-6. Solicitar inspeccion manual de las 5 URLs mas importantes desde Search Console.
-7. Si persiste tras 60 dias: revisar estructura de enlaces internos de forma global.
+## Plan B — Si la revision de 19/05 a 24/05 sale plana
+1. Identificar que URLs siguen en "Descubierta" o "Rastreada" sin indexar.
+2. Revisar si tienen minimo 3 enlaces internos entrantes y al menos 600 palabras utiles.
+3. Reforzar enlazado desde home, index del blog y piezas que ya reciben impresiones.
+4. Ajustar title/meta solo en URLs con muchas impresiones y CTR claramente bajo.
+5. Publicar 1 articulo nuevo conectado al cluster que peor avance.
+6. Solicitar inspeccion manual solo de las 5 URLs mas importantes que sigan atascadas.
+7. Si tras otra quincena no mejora: revisar estructura interna de enlaces de forma mas amplia.
 
 ## Plan C — Si AdSense rechaza (motivo: contenido de poco valor)
 

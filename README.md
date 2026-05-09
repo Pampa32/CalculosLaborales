@@ -215,9 +215,6 @@ Este reporte detecta en blog/guías:
 - páginas con pocas palabras (umbral por defecto: 600),
 - enlazado interno bajo (umbral por defecto: 5 enlaces internos).
 
-Plan recomendado de remediación editorial (prioridades URL a URL):
-- `PLAN-REMEDIACION-ADSENSE-2026-04-24.md`
-
 ### Post-Deploy Monitoring
 1. **Semanas 1-2**: Reenviar sitemap en Search Console, inspeccionar 10-15 URLs
 2. **Semanas 3-4**: Revisar impresiones/CTR, ajustar titles/metas si es necesario

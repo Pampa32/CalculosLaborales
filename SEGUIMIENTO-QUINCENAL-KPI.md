@@ -121,19 +121,54 @@ AdSense sigue en "Preparando" — sin accion urgente hasta nueva señal del pane
 
 ## Nota operativa 09 / 05 / 2026
 - Estado Search Console observado:
-	- URLs validas indexadas: 63
-	- URLs descubiertas sin indexar: 17
-	- URLs rastreadas sin indexar: 1
-	- Impresiones totales (28 dias): 7,07 mil
-	- Clics totales (28 dias): 79
-	- CTR medio: 1,1 %
-	- Posicion media: 26,3 (28 dias) / 15,6 (24h)
+  - URLs validas indexadas: 63
+  - URLs descubiertas sin indexar: 17
+  - URLs rastreadas sin indexar: 1
+  - Impresiones totales (28 dias): 7,07 mil
+  - Clics totales (28 dias): 79
+  - CTR medio: 1,1 %
+  - Posicion media: 26,3 (28 dias) / 15,6 (24h)
 - Acciones ejecutadas en predeploy:
-	1. Refuerzo de enlazado interno en `index.html`, `blog/index.html` y `bajas/index.html` hacia URLs en estado "Descubierta".
-	2. Actualizacion de `lastmod` en `sitemap.xml` para `/`, `/blog/` y `/bajas/`.
-	3. Actualizacion de fecha visible de revision en home.
-	4. QA final sin errores en archivos modificados.
+  1. Refuerzo de enlazado interno en `index.html`, `blog/index.html` y `bajas/index.html` hacia URLs en estado "Descubierta".
+  2. Actualizacion de `lastmod` en `sitemap.xml` para `/`, `/blog/` y `/bajas/`.
+  3. Actualizacion de fecha visible de revision en home.
+  4. QA final sin errores en archivos modificados.
 - Siguiente accion operativa al publicar:
-	1. Reenviar sitemap.
-	2. Solicitar inspeccion manual de 8 URLs prioritarias.
-	3. Esperar 7-10 dias antes de reevaluar cobertura.
+  1. Reenviar sitemap.
+  2. Solicitar inspeccion manual de 8 URLs prioritarias.
+  3. Esperar 7-10 dias antes de reevaluar cobertura.
+
+## Plantilla preparada para la revision 19 / 05 / 2026 a 24 / 05 / 2026
+- Estado AdSense: [ ] En revision  [ ] Aprobado  [ ] Rechazado
+- Deploy en host confirmado: [ ] Si  [ ] No
+- Sitemap reenviado: [ ] Si  [ ] No
+- 8 URLs inspeccionadas manualmente: [ ] Si  [ ] No
+
+### Cobertura
+- URLs validas indexadas: ______
+- URLs descubiertas sin indexar: ______
+- URLs rastreadas sin indexar: ______
+- Errores de cobertura: ______
+
+### Rendimiento
+- Impresiones totales (28 dias): ______
+- Clics totales (28 dias): ______
+- CTR medio: ______
+- Posicion media: ______
+
+### Resultado de las 8 URLs prioritarias
+1. `/blog/como-saber-si-tienes-derecho-a-paro-2026.html`: ______
+2. `/blog/que-documentos-necesitas-para-pedir-el-paro-sin-errores.html`: ______
+3. `/blog/motivos-por-los-que-el-sepe-puede-denegarte-el-paro.html`: ______
+4. `/blog/como-revisar-una-nomina-paso-a-paso-sin-que-te-enganen.html`: ______
+5. `/blog/como-pasar-de-sueldo-bruto-anual-a-neto-mensual-con-ejemplos-reales.html`: ______
+6. `/blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html`: ______
+7. `/blog/diferencia-entre-finiquito-e-indemnizacion-con-ejemplos-reales.html`: ______
+8. `/blog/cuanto-paga-un-autonomo-seguridad-social-2026.html`: ______
+
+### Decision para la siguiente quincena
+- [ ] Mantener estabilidad y esperar nueva consolidacion
+- [ ] Ajustar snippets en URLs con mucho volumen y CTR bajo
+- [ ] Reforzar interlinking en URLs aun descubiertas
+- [ ] Publicar 1 pieza nueva para reforzar un cluster atascado
+- [ ] Activar plan de contingencia por rechazo AdSense

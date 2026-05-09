@@ -80,6 +80,23 @@ Ultima actualizacion: 2026-05-09
 - Si no mejora la indexacion, consultar Plan B en `roadmap-adsense-abril-2026.md`.
 - Articulos pendientes de refuerzo (si AdSense rechaza): `/guia/cuanto-se-cobra-el-primer-mes-de-paro.html`, `/guia/como-calcular-base-reguladora-paro.html`, `/guia/como-se-pagan-las-horas-extra.html`.
 
+## Guion para la proxima revision (10-15 dias)
+1. Confirmar que el deploy quedo bien en produccion: `/`, `/blog/`, `/bajas/`, `/sitemap.xml`, `/robots.txt`, `/ads.txt`.
+2. Revisar en Search Console:
+  - URLs indexadas
+  - "Descubierta, actualmente sin indexar"
+  - "Rastreada, actualmente sin indexar"
+  - estado de las 8 URLs inspeccionadas manualmente
+3. Comparar rendimiento 28 dias vs corte anterior:
+  - impresiones
+  - clics
+  - CTR
+  - posicion media
+4. Tomar decision con este criterio:
+  - si baja "Descubierta" y suben indexadas: mantener estabilidad
+  - si indexacion plana: aplicar Plan B del roadmap
+  - si hay rechazo AdSense: aplicar Plan C o D del roadmap segun motivo
+
 ## Documentacion operativa activa
 - `roadmap-adsense-abril-2026.md`: roadmap, decisiones del sprint y planes de contingencia (B/C/D).
 - `SEGUIMIENTO-QUINCENAL-KPI.md`: plantilla de seguimiento cada 14 dias.
@@ -105,14 +122,6 @@ Ultima actualizacion: 2026-05-09
   - snippets (title/meta) en URLs con impresiones altas y CTR bajo,
   - refuerzo de enlazado interno hacia URLs objetivo,
   - actualizacion de contenido con ejemplos/fuentes cuando haya estancamiento.
-
-## Estado tecnico validado local (25/04/2026)
-- READY_FOR_DEPLOY=YES.
-- Sin mojibake detectado.
-- Sin enlaces internos rotos detectados.
-- Sin errores de parseo JSON-LD detectados.
-- Sin faltantes de title/meta/canonical en HTML auditado.
-- `sitemap.xml` parseable y legible (sin bloqueos tecnicos).
 
 ## Estado tecnico validado local (09/05/2026)
 - Sin errores en `index.html`, `blog/index.html`, `bajas/index.html` y `sitemap.xml` tras la micro-ronda de interlinking.
