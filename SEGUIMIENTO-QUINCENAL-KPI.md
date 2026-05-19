@@ -172,3 +172,17 @@ AdSense sigue en "Preparando" — sin accion urgente hasta nueva señal del pane
 - [ ] Reforzar interlinking en URLs aun descubiertas
 - [ ] Publicar 1 pieza nueva para reforzar un cluster atascado
 - [ ] Activar plan de contingencia por rechazo AdSense
+
+## KPI de monetización alternativa (ver también CHECKLIST-SEMANA-CTA-LEADS.md)
+- Clics en CTA de revisión orientativa por URL: ______
+- Emails recibidos con asunto etiquetado por URL: ______
+- URLs con mejor tasa de conversión CTA: ______
+- Observaciones de calidad de lead: ______
+
+## Nota operativa 19 / 05 / 2026
+- Se crea `roadmap-monetizacion-2026.md` como plan dual (AdSense + monetizacion alternativa).
+- Se inicia Fase 1 con mejoras en:
+  1. `/tools/sueldo-neto.html`
+  2. `/tools/finiquito.html`
+  3. `/desempleo/cuanto-se-cobra-de-paro.html`
+- Objetivo de la quincena: validar interes real en CTA de ayuda orientativa sin deteriorar SEO ni experiencia de usuario.

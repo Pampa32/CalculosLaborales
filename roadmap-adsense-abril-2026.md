@@ -6,6 +6,7 @@ Ultima actualizacion: 2026-05-09
 ## Objetivo
 - Mantener el sitio en estado de calidad alta y estable para aumentar probabilidad de aprobacion AdSense.
 - Reducir friccion de rastreo/indexacion con mejoras editoriales y SEO de bajo riesgo.
+- Coordinar este plan con `roadmap-monetizacion-2026.md` para no depender de un unico canal de ingresos.
 
 ## Situacion operativa resumida
 - La siguiente accion inmediata fuera del repo es subir el sitio al host.
@@ -13,23 +14,33 @@ Ultima actualizacion: 2026-05-09
 - Hasta la siguiente revision no conviene tocar estructura global, plantillas ni lanzar cambios masivos.
 
 ## Estado actual (09/05/2026)
-- Fases 1 a 4 del roadmap original: completadas.
-- Hardening editorial + SEO + QA tecnico: completado.
-- Revision de AdSense: enviada (estado "Preparando").
-- Sesion 04/05/2026 completada:
   - Correccion de acentos en titles y meta descriptions de 45 paginas (commits 6c8fda6 y 44a21b4).
   - Actualizacion de lastmod en sitemap para 9 paginas modificadas (commit 2f28b8c).
   - Publicacion nuevo articulo cluster confianza/E-E-A-T: `blog/contrato-de-trabajo-que-revisar-antes-de-firmar.html` (commits 42ff3d9 y fb4f987).
   - Actualizacion de feed.xml, blog/index.html y sitemap.xml con el nuevo articulo.
-- Sesion 09/05/2026 completada:
    - Analisis de cobertura en Search Console: 63 URLs indexadas, 17 URLs en "Descubierta, actualmente sin indexar" y 1 URL "Rastreada, actualmente sin indexar".
    - Micro-ronda de interlinking aplicada en home, index del blog y hub de bajas para empujar rastreo de URLs descubiertas.
    - Actualizacion de `lastmod` en sitemap para `/`, `/blog/` y `/bajas/` tras los cambios de interlinking.
    - Actualizacion de fecha visible de ultima revision en home a mayo 2026.
-- KPI a 09/05/2026: 63 URLs indexadas, 7,07 mil impresiones (28d), 79 clics (28d), CTR 1,1 %, posicion media 26,3 (28d) / 15,6 (24h).
-- Proyecto subido al host: pendiente (usuario lo hace manualmente).
-- Sitemap reenviado a Search Console: pendiente (usuario lo hace tras subir).
+## Estado actual (19/05/2026)
+- Fases 1 a 4 completadas.
+- Hardening editorial + SEO + QA técnico: completado.
+- Revisión de AdSense: enviada (estado "Preparando").
+- Cambios de monetización y CTA/leads integrados (ver roadmap-monetizacion-2026.md y CHECKLIST-SEMANA-CTA-LEADS.md).
 
+## Checklist inmediata tras subir al host
+1. Confirmar que `/`, `/blog/`, `/bajas/`, `/sitemap.xml`, `/robots.txt` y `/ads.txt` responden bien en producción.
+2. Reenviar `sitemap.xml` en Search Console.
+3. Solicitar inspección manual de estas 8 URLs:
+   - `/blog/como-saber-si-tienes-derecho-a-paro-2026.html`
+   - `/blog/que-documentos-necesitas-para-pedir-el-paro-sin-errores.html`
+   - `/blog/motivos-por-los-que-el-sepe-puede-denegarte-el-paro.html`
+   - `/blog/como-revisar-una-nomina-paso-a-paso-sin-que-te-enganen.html`
+   - `/blog/como-pasar-de-sueldo-bruto-anual-a-neto-mensual-con-ejemplos-reales.html`
+   - `/blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html`
+   - `/blog/diferencia-entre-finiquito-e-indemnizacion-con-ejemplos-reales.html`
+   - `/blog/cuanto-paga-un-autonomo-seguridad-social-2026.html`
+4. No tocar arquitectura, menús ni estructura de enlaces durante 7-10 días.
 ## Checklist inmediata tras subir al host
 1. Confirmar que `/`, `/blog/`, `/bajas/`, `/sitemap.xml`, `/robots.txt` y `/ads.txt` responden bien en produccion.
 2. Reenviar `sitemap.xml` en Search Console.

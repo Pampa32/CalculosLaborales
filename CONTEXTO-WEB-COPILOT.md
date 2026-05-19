@@ -1,17 +1,53 @@
 # Contexto Web CalculosLaborales (para nuevas sesiones)
 
 Fecha de inicio: 2026-04-13
-Ultima actualizacion: 2026-05-09
+Última actualización: 2026-05-19
 
-## Resumen rapido
-- Proyecto: sitio estatico en espanol sobre calculos laborales.
-- Objetivo de negocio final: generar ingresos pasivos de forma sostenible mediante publicidad de AdSense.
-- Objetivo operativo actual: mantener calidad editorial y tecnica alta para facilitar aprobacion AdSense y consolidar indexacion.
-- Roadmap activo: roadmap-adsense-abril-2026.md.
-- Estado actual: fases 1 a 4 completadas + hardening editorial/SEO/QA cerrado; revision de AdSense ya enviada.
-- Contexto temporal: web publicada hace aproximadamente 1 mes y medio; indexacion aun parcial.
+## Contexto operativo
+- Proyecto: sitio estático en español sobre cálculos laborales.
+- Objetivo: monetización sostenible (AdSense + leads/afiliación), calidad editorial y técnica alta, crecimiento SEO progresivo.
+- Roadmaps activos:
+  - roadmap-adsense-abril-2026.md (calidad, indexación, contingencias AdSense)
+  - roadmap-monetizacion-2026.md (estrategia dual: AdSense + monetización alternativa)
+  - CHECKLIST-SEMANA-CTA-LEADS.md (medición semanal de conversión y leads)
 
-## Lo que ya se hizo
+
+## Reglas de trabajo activas
+- Ejecutar cambios por fases, validando al final de cada bloque.
+- Priorizar calidad editorial y técnica sobre cantidad.
+- Medir impacto de cada cambio en SEO, AdSense y monetización alternativa.
+- Mantener transparencia y aviso legal en todos los bloques comerciales.
+- No hacer cambios estructurales masivos sin datos claros.
+- Usar los checklists y roadmaps activos como referencia obligatoria.
+
+## Checklist de arranque en cada sesión
+1. Leer roadmap-adsense-abril-2026.md y roadmap-monetizacion-2026.md.
+2. Leer este archivo (CONTEXTO-WEB-COPILOT.md).
+3. Leer CHECKLIST-SEMANA-CTA-LEADS.md si hay cambios de conversión/monetización.
+4. Confirmar estado git y cambios no comiteados.
+5. Validar en producción:
+   - /ads.txt, /robots.txt, /sitemap.xml
+   - 2-3 URLs clave de contenido
+6. Si hay cambios pendientes de subida: ejecutar QA predeploy (encoding, enlaces internos, JSON-LD, SEO mínimo).
+7. Continuar desde el siguiente paso del roadmap o del último pedido del usuario.
+
+## Próximos pasos recomendados
+- Subir cambios al host y confirmar que ads.txt responde con 200.
+- Reenviar sitemap y solicitar inspección de 8 URLs clave en Search Console.
+- Mantener estabilidad técnica mientras dura la revisión de AdSense.
+- Siguiente revisión quincenal de KPI: ver SEGUIMIENTO-QUINCENAL-KPI.md.
+- Si hay rechazo de AdSense, consultar planes de contingencia en roadmap-adsense-abril-2026.md.
+- Si no mejora la indexación, consultar Plan B en roadmap-adsense-abril-2026.md.
+
+## Documentación operativa activa
+- roadmap-adsense-abril-2026.md: roadmap, decisiones y contingencias AdSense.
+- roadmap-monetizacion-2026.md: estrategia dual y fases de monetización.
+- SEGUIMIENTO-QUINCENAL-KPI.md: plantilla de seguimiento SEO, AdSense y monetización.
+- CHECKLIST-SEMANA-CTA-LEADS.md: checklist semanal de conversión/leads.
+
+## Plantilla operativa
+- Usar SEGUIMIENTO-QUINCENAL-KPI.md cada 14 días para métricas y decisiones.
+- Usar CHECKLIST-SEMANA-CTA-LEADS.md para medir semanalmente la conversión y calidad de leads.
 - Fase 1: saneamiento critico de contenido y enlaces.
 - Fase 2: refuerzo de 10 URLs prioritarias con mas profundidad (casos, checklist, fuentes).
 - Fase 3: consistencia global editorial y enlace a metodologia.
@@ -99,6 +135,7 @@ Ultima actualizacion: 2026-05-09
 
 ## Documentacion operativa activa
 - `roadmap-adsense-abril-2026.md`: roadmap, decisiones del sprint y planes de contingencia (B/C/D).
+- `roadmap-monetizacion-2026.md`: roadmap dual de monetizacion (afiliacion/leads/activos propios en paralelo con AdSense).
 - `SEGUIMIENTO-QUINCENAL-KPI.md`: plantilla de seguimiento cada 14 dias.
 
 ## Proyeccion de seguimiento (30/60/90 dias)
