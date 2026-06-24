@@ -1,7 +1,7 @@
 # Roadmap de monetizacion 2026 (estrategia dual)
 
 Fecha inicio: 2026-05-19
-Última actualización: 2026-05-19
+Última actualización: 2026-06-24
 
 ## Objetivo general
 - Monetización sostenible: AdSense + canal alternativo (afiliación, leads, recursos propios).
@@ -88,3 +88,77 @@ Fecha inicio: 2026-05-19
 ## Registro de implementación (sesión 19/05/2026)
 - Roadmap dual de monetización creado.
 - Inicio de mejoras en URLs de nómina, finiquito y paro (fase 1).
+
+## Actualización operativa 24/06/2026
+
+### Foto actual (corte Search Console y paneles)
+- Rendimiento 28 días: 204 clics, 16,7 mil impresiones, CTR 1,2 %, posición media 23,5.
+- Rendimiento 7 días: 64 clics, 4,9 mil impresiones, CTR 1,3 %, posición media 16,1.
+- Cobertura: 75 indexadas y 10 sin indexar.
+- Cobertura sin indexar (detalle):
+  - 2 páginas con redirección.
+  - 2 errores de redirección.
+  - 3 rastreadas, actualmente sin indexar.
+  - 3 descubiertas, actualmente sin indexar.
+- AdSense:
+  - Estado: "Requiere su atención" por contenido de poco valor.
+  - Ventana de reintento bloqueada hasta 25/06/2026.
+
+### Lectura estratégica
+1. El SEO muestra tracción real y estable; no hay estancamiento crítico.
+2. El cuello de botella actual es de monetización por AdSense (valor percibido), no técnico.
+3. Se mantiene estrategia dual, pero con prioridad operativa en monetización alternativa durante 60-90 días.
+
+## Plan 30 días (25/06/2026 a 25/07/2026)
+
+### Bloque 1 - SEO de bajo riesgo con impacto en CTR (días 1 a 10)
+1. Ajustar snippets (title/meta) solo en URLs con impresiones altas y CTR menor al 1,0 %.
+2. Prioridad inicial por evidencia:
+  - /desempleo/cuanto-se-cobra-de-paro.html
+  - /guia/cuando-se-cobra-el-paro-tras-solicitarlo.html
+  - /tools/sueldo-neto.html
+  - /blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html
+  - /tools/duracion-paro.html
+  - /guia/plazo-para-solicitar-el-paro.html
+3. No tocar arquitectura global, navegación ni plantillas.
+
+### Bloque 2 - Conversión y monetización alternativa (días 11 a 20)
+1. Refuerzo de CTA y bloques comerciales transparentes en tools con más demanda:
+  - /tools/calculadora-antiguedad-laboral.html
+  - /tools/calculadora-dias-cotizados.html
+  - /tools/calculadora-plus-nocturnidad.html
+  - /tools/calculadora-pagas-extra.html
+2. Medir eventos clave por URL (clic CTA principal, clic CTA secundario, envío de lead).
+3. Revisar copy de bloques de confianza en páginas con mayor intención transaccional.
+
+### Bloque 3 - Decisión de canal (días 21 a 30)
+1. Reintentar revisión AdSense una vez tras 25/06 si no hay cambios técnicos bloqueantes.
+2. Si hay nuevo rechazo por contenido de poco valor:
+  - AdSense pasa a prioridad media durante 90 días.
+  - El carril principal pasa a leads/afiliación/activos propios.
+3. Si mejora estado AdSense o se aprueba:
+  - Mantener canal dual, sin desplazar el carril alternativo que ya convierta.
+
+## KPIs de decisión (corte semanal)
+
+### SEO
+- Clics totales 28 días.
+- Impresiones 28 días.
+- CTR en top URLs con optimización de snippets.
+- Posición media de URLs priorizadas.
+
+### Monetización alternativa
+- Clics CTA por URL.
+- Leads recibidos por URL/cluster.
+- Tasa de conversión por plantilla de CTA.
+- Señal de ingresos por 1000 sesiones (estimado).
+
+### AdSense
+- Estado de revisión.
+- Motivo exacto del panel (si aplica).
+- Evolución de incidencias bloqueantes (si reaparecen).
+
+## Regla de priorización acordada
+1. Mantener AdSense activo en paralelo.
+2. No depender de AdSense como único canal.
+3. Ejecutar decisiones por datos quincenales, no por intuición.

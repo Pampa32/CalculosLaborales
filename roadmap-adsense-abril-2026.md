@@ -1,7 +1,7 @@
 # Roadmap AdSense e indexacion
 
 Fecha inicio: 2026-04-13
-Ultima actualizacion: 2026-05-09
+Ultima actualizacion: 2026-06-24
 
 ## Objetivo
 - Mantener el sitio en estado de calidad alta y estable para aumentar probabilidad de aprobacion AdSense.
@@ -157,3 +157,27 @@ Objetivo: reaccionar con rapidez si persisten problemas de indexacion o rechazo 
 - **Trafico insuficiente**: no hay atajos. Mantener publicacion mensual y esperar consolidacion organica. Revisar CTR de snippets con datos reales de Search Console.
 - **Politicas de Google**: leer el motivo exacto. Los mas frecuentes en sitios de este tipo son: datos personales mal gestionados (cookies/privacidad), contenido con apariencia de YMYL sin autoría clara, o exceso de publicitario sobre contenido util. Cada uno tiene solucion especifica.
 - **Sitio en construccion o insuficiente**: asegurarse de que el pie de pagina tiene aviso legal, privacidad y sobre nosotros accesibles; y que la metodologia explica como se hacen los calculos.
+
+## Actualizacion 24/06/2026
+
+### Estado de panel y SEO
+- AdSense mantiene incidencia de "contenido de poco valor".
+- Se detecto limite temporal de intentos de revision hasta 25/06/2026.
+- Search Console 28 dias (corte operativo): 204 clics, 16,7 mil impresiones, CTR 1,2 %, posicion media 23,5.
+- Cobertura actual: 75 indexadas y 10 sin indexar.
+
+### Decision operativa (vigente)
+1. Reintentar revision de AdSense una sola vez tras 25/06/2026.
+2. Si hay nuevo rechazo por "contenido de poco valor":
+   - AdSense pasa a prioridad media por 90 dias.
+   - Se mantiene como canal secundario mientras se escala monetizacion alternativa.
+3. No se aplican cambios estructurales masivos durante esta ventana.
+
+### Bloque de trabajo previo al reintento
+1. Ajuste de snippets en URLs con muchas impresiones y CTR bajo (<1,0 %).
+2. Refuerzo de conversion en tools de mayor demanda (CTA y medicion).
+3. Mantenimiento tecnico estable: sitemap, robots, ads.txt y redirecciones canónicas.
+
+### Criterio de salida de este roadmap
+- Si AdSense se aprueba: pasa a mantenimiento en paralelo con canal alternativo.
+- Si AdSense vuelve a rechazar por valor: este roadmap entra en modo seguimiento mensual y la ejecucion principal migra a `roadmap-monetizacion-2026.md`.

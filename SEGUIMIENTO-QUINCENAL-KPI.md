@@ -186,3 +186,36 @@ AdSense sigue en "Preparando" — sin accion urgente hasta nueva señal del pane
   2. `/tools/finiquito.html`
   3. `/desempleo/cuanto-se-cobra-de-paro.html`
 - Objetivo de la quincena: validar interes real en CTA de ayuda orientativa sin deteriorar SEO ni experiencia de usuario.
+
+## Checklist post-subida (ronda 04 / 06 / 2026)
+
+### Ventana 0-24h
+- [ ] Confirmar en produccion que cargan bien estas 5 URLs reforzadas:
+  - /guia/cuanto-se-cobra-el-primer-mes-de-paro.html
+  - /guia/como-calcular-base-reguladora-paro.html
+  - /guia/como-se-pagan-las-horas-extra.html
+  - /blog/como-pasar-de-sueldo-bruto-anual-a-neto-mensual-con-ejemplos-reales.html
+  - /blog/que-documentos-necesitas-para-pedir-el-paro-sin-errores.html
+- [ ] Confirmar que sitemap.xml refleja lastmod 2026-06-04 para esas 5 URLs.
+- [ ] Reenviar sitemap en Search Console.
+- [ ] Solicitar inspeccion manual de esas 5 URLs (sin envios masivos adicionales).
+
+### Ventana 24-72h
+- [ ] Revisar en Search Console si las 5 URLs muestran ultimo rastreo actualizado.
+- [ ] Confirmar que no aparecieron nuevos errores de cobertura en esas rutas.
+- [ ] Verificar que no hay caidas de render o incidencias de experiencia movil.
+- [ ] Registrar observaciones iniciales en este documento (rastreo, estado, notas).
+
+### Ventana dia 7-10
+- [ ] Medir para las 5 URLs: impresiones, clics, CTR y posicion media.
+- [ ] Comparar con corte anterior para validar direccion de tendencia.
+- [ ] Si hay 1-2 URLs planas: ajustar snippet (title/meta) de forma puntual.
+- [ ] Si hay bloqueo general de rastreo/indexacion: reforzar interlinking desde home, blog index y hub tematico.
+- [ ] Si hay mejora razonable de rastreo y cobertura: preparar nueva solicitud de revision en AdSense.
+
+### Registro rapido de control (rellenar)
+- Fecha de deploy: ______
+- Fecha de reenvio sitemap: ______
+- Fecha de inspeccion de 5 URLs: ______
+- Estado AdSense actual: ______
+- Decision al dia 10: [ ] Mantener [ ] Ajustar snippets [ ] Refuerzo interlinking [ ] Reenviar AdSense
