@@ -251,6 +251,18 @@ gtag('config', 'G-BEGREVBK6N');
     <h2>Ultima actualizacion</h2>
     <p>Última actualización: 23 de abril de 2026.</p>
   </section>
+
+  <section class="section-block">
+    <div class="card card-featured">
+      <h2>Revision orientativa de tu nomina en 24-48h</h2>
+      <p>Si quieres validar si la retencion es coherente con tu caso, puedes enviarnos una consulta orientativa para ordenar datos, detectar errores frecuentes y definir el siguiente paso.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-cta-position="end" data-cta-variant="A" href="mailto:contacto@calculoslaborales.es?subject=Revision%20IRPF%20nomina%20-%20blog/por-que-te-retienen" id="ctaPrimaryIrpfBlog">Enviar mi caso para revision orientativa</a>
+        <a class="btn" data-cta-position="end" data-cta-variant="A" href="/blog/como-revisar-una-nomina-paso-a-paso-sin-que-te-enganen.html" id="ctaSecondaryIrpfBlog">Ver checklist para evitar errores frecuentes</a>
+      </div>
+      <p class="note note-caption"><strong>Transparencia:</strong> este bloque es informativo y no sustituye asesoria juridica o fiscal formal.</p>
+    </div>
+  </section>
 </main>
 <footer class="footer">
   <div class="footer-content">
@@ -266,6 +278,42 @@ gtag('config', 'G-BEGREVBK6N');
 <script defer src="../assets/js/nav.min.js?v=20260313e"></script>
 <script defer src="../assets/js/nav-search.min.js?v=20260313"></script>
 <script defer src="../assets/js/scroll-top.min.js?v=20260310"></script>
+<script>
+  (function () {
+    function track(eventName, params) {
+      if (typeof gtag !== 'function') return;
+      gtag('event', eventName, params);
+    }
+
+    const baseParams = {
+      page_path: location.pathname,
+      page_type: 'blog',
+      cta_position: 'end',
+      cta_variant: 'A',
+      cluster: 'irpf'
+    };
+
+    const primary = document.getElementById('ctaPrimaryIrpfBlog');
+    const secondary = document.getElementById('ctaSecondaryIrpfBlog');
+
+    if (primary) {
+      primary.addEventListener('click', function () {
+        track('cta_primary_click', baseParams);
+        track('lead_form_start', baseParams);
+        if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
+          track('mailto_click', baseParams);
+          track('lead_form_submit', baseParams);
+        }
+      });
+    }
+
+    if (secondary) {
+      secondary.addEventListener('click', function () {
+        track('cta_secondary_click', baseParams);
+      });
+    }
+  })();
+</script>
 <script src="../assets/js/cookie-consent.min.js"></script>
 </body>
 </html>

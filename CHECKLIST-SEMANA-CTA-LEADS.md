@@ -1,30 +1,46 @@
-# Checklist semanal de medición CTA/leads (monetización)
+﻿# Checklist semanal de CTA/leads (prioridad de monetizacion)
 
-**Objetivo:** Medir el impacto de los nuevos bloques de conversión y refuerzo editorial en las páginas clave del cluster despido/finiquito y paro.
+Fecha de actualizacion: 2026-07-05
+Frecuencia: semanal
 
-## 1. Revisión de métricas básicas
-- [ ] Visitas semanales a cada URL modificada
-- [ ] Porcentaje de scroll hasta el bloque de conversión
-- [ ] Clics en CTA principal (botón de email)
-- [ ] Clics en CTA secundario (acceso a calculadora o ejemplos)
-- [ ] Ratio de conversión (clics/visitas)
+## Objetivo
+Optimizar conversion en las URLs de alta intencion del sprint activo.
 
-## 2. Seguimiento de leads
-- [ ] Emails recibidos por cada tipo de revisión (finiquito, indemnización, paro, desglose)
-- [ ] Tasa de respuesta a los leads (opcional)
-- [ ] Feedback cualitativo de usuarios (si lo hay)
+## URLs objetivo de la semana
+1. ______
+2. ______
+3. ______
+4. ______
+5. ______
 
-## 3. Control de calidad editorial
-- [ ] Revisión de comentarios o quejas sobre los bloques
-- [ ] Comprobación de que los bloques no afectan negativamente a la experiencia de usuario (UX)
-- [ ] Validación de que los bloques cumplen con la transparencia y aviso legal
+## Medicion obligatoria por URL
+- [ ] Sesiones semanales
+- [ ] cta_primary_click
+- [ ] cta_secondary_click
+- [ ] lead_form_start
+- [ ] lead_form_submit
+- [ ] mailto_click (si aplica)
 
-## 4. Observaciones y acciones
-- [ ] Anotar incidencias, mejoras detectadas o sugerencias de usuarios
-- [ ] Proponer ajustes en los bloques si la conversión es baja o hay fricción
+## Calidad del embudo
+- [ ] El CTA principal se ve sin friccion en movil y desktop
+- [ ] El mensaje de valor es claro (24-48h + beneficio concreto)
+- [ ] El siguiente paso de contacto es simple
+- [ ] El bloque cumple transparencia legal
 
----
+## Reglas de decision semanal
+1. Si CTR CTA >= 2.0%: mantener copy y escalar patron.
+2. Si CTR CTA 1.0%-1.9%: test A/B de titular y posicion del bloque.
+3. Si CTR CTA < 1.0%: rehacer propuesta de valor y reducir friccion.
+4. Si lead_form_submit < 0.3%: simplificar formulario o canal de contacto.
 
-**Recomendación:** Registrar los datos semanalmente en una hoja de cálculo o documento compartido para análisis evolutivo y toma de decisiones.
+## Acciones cerradas
+- Cambio 1: ______
+- Cambio 2: ______
+- Cambio 3: ______
 
-**Ubicación sugerida:** /SEGUIMIENTO-QUINCENAL-KPI.md o documento propio: /CHECKLIST-SEMANA-CTA-LEADS.md
+## Resultado semanal
+- Principal aprendizaje: ______
+- Siguiente accion: ______
+
+## Nota de foco
+AdSense se mantiene en paralelo. Este checklist no se detiene por estados de revision de AdSense.

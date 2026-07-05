@@ -143,25 +143,18 @@ npx http-server
 
 ---
 
-## 🗺️ Roadmap 2026
+## 🗺️ Prioridad 2026
 
-### ✅ Completado (Abril 2026)
-- [x] SEO hardening: titles, meta descriptions, duplicates
-- [x] CTAs in-content en artículos
-- [x] FAQ expansion (6-8 Q&A por artículo)
-- [x] Validación pre-deploy (encoding, mojibake, links, JSON-LD)
-- [x] Publicación en GitHub
+La prioridad operativa actual es monetización por conversión.
 
-### 📋 En Progreso
-- [ ] Post-deploy monitoring (Search Console)
-- [ ] Ajustes según datos de indexación
-- [ ] Nuevas herramientas (vacaciones, reformas)
+- Documento rector: PLAN-14-DIAS-MONETIZACION-JULIO-2026.md
+- Marco estratégico: roadmap-monetizacion-2026.md
+- AdSense: canal secundario (sin bloquear ejecución comercial)
 
-### 🔮 Futuro (Mayo-Junio 2026)
-- [ ] Calculadora vacaciones
-- [ ] Calculadora indemnización avanzada
-- [ ] Blog en inglés (opcional)
-- [ ] PWA offline support
+### Enfoque vigente
+- Optimizar embudo en URLs de alta intención (paro, nómina, finiquito, IRPF)
+- Medir CTR de CTA, conversión a lead y ratio lead sobre clic
+- Escalar solo patrones que ya conviertan
 
 ---
 

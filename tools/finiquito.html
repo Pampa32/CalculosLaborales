@@ -263,8 +263,8 @@
 <h2>Revision guiada de finiquito por email</h2>
 <p>Si ya tienes propuesta de liquidacion, puedes enviarnos tu caso para una revision orientativa de conceptos: salario pendiente, vacaciones, pagas extra y separacion entre finiquito e indemnizacion.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="mailto:contacto@calculoslaborales.es?subject=Revision%20finiquito%20-%20tools/finiquito">Pedir revision orientativa</a>
-<a class="btn" href="/guia/como-calcular-finiquito-en-espana.html">Repasar guia completa de finiquito</a>
+<a class="btn btn-primary" data-cta-position="mid" data-cta-variant="A" href="mailto:contacto@calculoslaborales.es?subject=Revision%20finiquito%20-%20tools/finiquito" id="ctaPrimaryFiniquito">Quiero una revision orientativa de mi caso (24-48h)</a>
+<a class="btn" data-cta-position="mid" data-cta-variant="A" href="/guia/como-calcular-finiquito-en-espana.html" id="ctaSecondaryFiniquito">Prefiero empezar con checklist y ejemplos reales</a>
 </div>
 <p class="note note-caption"><strong>Importante:</strong> esta ayuda no sustituye asesoramiento juridico formal ni defensa letrada. Se usa como primer filtro practico para detectar incoherencias.</p>
 </div>
@@ -512,6 +512,43 @@
     toggleMeses();
   </script>
 <script src="../assets/js/cookie-consent.min.js"></script>
+
+<script>
+  (function () {
+    function track(eventName, params) {
+      if (typeof gtag !== 'function') return;
+      gtag('event', eventName, params);
+    }
+
+    const baseParams = {
+      page_path: location.pathname,
+      page_type: 'tool',
+      cta_position: 'mid',
+      cta_variant: 'A',
+      cluster: 'finiquito'
+    };
+
+    const primary = document.getElementById('ctaPrimaryFiniquito');
+    const secondary = document.getElementById('ctaSecondaryFiniquito');
+
+    if (primary) {
+      primary.addEventListener('click', function () {
+        track('cta_primary_click', baseParams);
+        track('lead_form_start', baseParams);
+        if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
+          track('mailto_click', baseParams);
+          track('lead_form_submit', baseParams);
+        }
+      });
+    }
+
+    if (secondary) {
+      secondary.addEventListener('click', function () {
+        track('cta_secondary_click', baseParams);
+      });
+    }
+  })();
+</script>
 
 
 <footer class="footer">

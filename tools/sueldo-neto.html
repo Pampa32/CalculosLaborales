@@ -316,8 +316,8 @@ Introduce tus datos para calcular una estimación de tu sueldo neto.
 <h2>Siguiente paso: optimiza tu retencion sin errores</h2>
 <p>Si el resultado te sorprende, no te quedes solo con la estimacion. Puedes revisar primero tu situacion fiscal y, si lo necesitas, pedir una orientacion personalizada por email.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="/blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html">Ver por que te retienen tanto IRPF</a>
-<a class="btn" href="mailto:contacto@calculoslaborales.es?subject=Revision%20IRPF%20nomina%20-%20sueldo-neto">Solicitar revision orientativa</a>
+<a class="btn btn-primary" data-cta-position="mid" data-cta-variant="A" href="mailto:contacto@calculoslaborales.es?subject=Revision%20IRPF%20nomina%20-%20sueldo-neto" id="ctaPrimarySueldoNeto">Quiero una revision orientativa de mi caso (24-48h)</a>
+<a class="btn" data-cta-position="mid" data-cta-variant="A" href="/blog/por-que-te-retienen-tanto-irpf-en-la-nomina.html" id="ctaSecondarySueldoNeto">Prefiero empezar con checklist y ejemplos reales</a>
 </div>
 <p class="note note-caption"><strong>Transparencia:</strong> este bloque es informativo y no altera el calculo de la herramienta. Si en el futuro se incluyen recomendaciones comerciales, se indicara de forma explicita.</p>
 </div>
@@ -513,6 +513,44 @@ Introduce tus datos para calcular una estimación de tu sueldo neto.
     const _yEl = document.getElementById('y'); if (_yEl) _yEl.textContent = new Date().getFullYear();
 </script>
 <script src="../assets/js/cookie-consent.min.js"></script>
+
+
+<script>
+  (function () {
+    function track(eventName, params) {
+      if (typeof gtag !== 'function') return;
+      gtag('event', eventName, params);
+    }
+
+    const baseParams = {
+      page_path: location.pathname,
+      page_type: 'tool',
+      cta_position: 'mid',
+      cta_variant: 'A',
+      cluster: 'nomina'
+    };
+
+    const primary = document.getElementById('ctaPrimarySueldoNeto');
+    const secondary = document.getElementById('ctaSecondarySueldoNeto');
+
+    if (primary) {
+      primary.addEventListener('click', function () {
+        track('cta_primary_click', baseParams);
+        track('lead_form_start', baseParams);
+        if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
+          track('mailto_click', baseParams);
+          track('lead_form_submit', baseParams);
+        }
+      });
+    }
+
+    if (secondary) {
+      secondary.addEventListener('click', function () {
+        track('cta_secondary_click', baseParams);
+      });
+    }
+  })();
+</script>
 
 
 <script>

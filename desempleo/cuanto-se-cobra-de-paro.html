@@ -421,8 +421,8 @@ window.initAdSenseSlot && window.initAdSenseSlot(document.currentScript);
 <h2>Bloque de ayuda para casos complejos</h2>
 <p>Si hay diferencias entre tu estimacion y el importe comunicado, puedes escribirnos con asunto "revision paro" para ordenar datos y detectar en que punto puede estar el desfase.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="mailto:contacto@calculoslaborales.es?subject=Revision%20paro%20-%20cuanto-se-cobra-de-paro">Solicitar revision orientativa</a>
-<a class="btn" href="/guia/como-solicitar-el-paro-paso-a-paso.html">Revisar tramites del SEPE</a>
+<a class="btn btn-primary" data-cta-position="end" data-cta-variant="A" href="mailto:contacto@calculoslaborales.es?subject=Revision%20paro%20-%20cuanto-se-cobra-de-paro" id="ctaPrimaryParo">Quiero una revision orientativa de mi caso (24-48h)</a>
+<a class="btn" data-cta-position="end" data-cta-variant="A" href="/guia/como-solicitar-el-paro-paso-a-paso.html" id="ctaSecondaryParo">Prefiero empezar con checklist y tramites del SEPE</a>
 </div>
 <p class="note note-caption"><strong>Transparencia:</strong> esta orientacion inicial es informativa y no sustituye resolucion oficial del SEPE ni asesoramiento profesional reglado.</p>
 </div>
@@ -434,6 +434,42 @@ window.initAdSenseSlot && window.initAdSenseSlot(document.currentScript);
 <script defer="" src="../assets/js/scroll-top.min.js?v=20260310"></script>
 <script>
     const _yEl = document.getElementById('y'); if (_yEl) _yEl.textContent = new Date().getFullYear();
+  </script>
+<script>
+    (function () {
+      function track(eventName, params) {
+        if (typeof gtag !== 'function') return;
+        gtag('event', eventName, params);
+      }
+
+      const baseParams = {
+        page_path: location.pathname,
+        page_type: 'guia',
+        cta_position: 'end',
+        cta_variant: 'A',
+        cluster: 'paro'
+      };
+
+      const primary = document.getElementById('ctaPrimaryParo');
+      const secondary = document.getElementById('ctaSecondaryParo');
+
+      if (primary) {
+        primary.addEventListener('click', function () {
+          track('cta_primary_click', baseParams);
+          track('lead_form_start', baseParams);
+          if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
+            track('mailto_click', baseParams);
+            track('lead_form_submit', baseParams);
+          }
+        });
+      }
+
+      if (secondary) {
+        secondary.addEventListener('click', function () {
+          track('cta_secondary_click', baseParams);
+        });
+      }
+    })();
   </script>
 
 <script src="../assets/js/cookie-consent.min.js"></script>
