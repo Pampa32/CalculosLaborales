@@ -255,6 +255,11 @@
 </div>
 <div class="divider"></div>
 <p class="note" id="nota">Consejo: revisa tu convenio y tu nómina. Aquí calculamos una estimación básica para hacerte una idea rápida.</p>
+<div id="ctaResultadoFiniquito" style="display:none;margin-top:1rem;padding:1rem 1.25rem;background:#eef5ff;border-radius:8px;border-left:3px solid #0057b8;">
+  <p style="margin:0 0 0.6rem;font-weight:600;font-size:0.95rem;">¿Quieres que revisemos si el importe es correcto?</p>
+  <a id="ctaInlineFiniquitoEmail" class="btn btn-primary" href="mailto:contacto@calculoslaborales.es?subject=Revision%20finiquito" style="display:block;text-align:center;margin-bottom:0.5rem;">Revisar mi finiquito por email (24-48h)</a>
+  <p style="margin:0;font-size:0.8rem;color:#555;text-align:center;">Respuesta personalizada. Sin compromiso.</p>
+</div>
 </div>
 </div>
 </section>
@@ -456,6 +461,14 @@
       document.getElementById('vacaciones').textContent = eur(res.vacaciones);
       document.getElementById('extra').textContent = eur(res.extra);
       document.getElementById('total').textContent = eur(res.total);
+
+      // Mostrar CTA post-resultado con importe personalizado
+      const ctaResultado = document.getElementById('ctaResultadoFiniquito');
+      const ctaInline = document.getElementById('ctaInlineFiniquitoEmail');
+      if (ctaResultado && ctaInline && res.total > 0) {
+        ctaInline.href = 'mailto:contacto@calculoslaborales.es?subject=Revision%20finiquito%20-%20' + Math.round(res.total) + 'EUR';
+        ctaResultado.style.display = 'block';
+      }
     }
 
     const ids = ['salarioMensual', 'pagas', 'diasTrabajadosMes', 'diasMes', 'vacPendientes', 'mesesTrabajados'];
@@ -530,17 +543,19 @@
 
     const primary = document.getElementById('ctaPrimaryFiniquito');
     const secondary = document.getElementById('ctaSecondaryFiniquito');
+    const inlineBtn = document.getElementById('ctaInlineFiniquitoEmail');
 
-    if (primary) {
-      primary.addEventListener('click', function () {
-        track('cta_primary_click', baseParams);
-        track('lead_form_start', baseParams);
-        if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
-          track('mailto_click', baseParams);
-          track('lead_form_submit', baseParams);
-        }
-      });
+    function trackPrimary(btn) {
+      track('cta_primary_click', Object.assign({}, baseParams, { cta_position: btn.dataset.ctaPosition || 'post_result' }));
+      track('lead_form_start', baseParams);
+      if ((btn.getAttribute('href') || '').indexOf('mailto:') === 0) {
+        track('mailto_click', baseParams);
+        track('lead_form_submit', baseParams);
+      }
     }
+
+    if (primary) primary.addEventListener('click', function () { trackPrimary(primary); });
+    if (inlineBtn) inlineBtn.addEventListener('click', function () { trackPrimary(inlineBtn); });
 
     if (secondary) {
       secondary.addEventListener('click', function () {

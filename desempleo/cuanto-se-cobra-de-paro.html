@@ -213,7 +213,10 @@
 </article>
 <article class="card">
 <h3>Si el importe del SEPE no te cuadra</h3>
-<p>Ordena primero bases, topes y cargas familiares. Si sigues con dudas, puedes pedir una revision orientativa de expediente por email.</p>
+<p>Ordena primero bases, topes y cargas familiares. Si sigues con dudas, te revisamos el expediente.</p>
+<div class="card-actions" style="margin-top:0.75rem;">
+  <a class="btn btn-primary" data-cta-position="mid" data-cta-variant="B" href="mailto:contacto@calculoslaborales.es?subject=Revision%20paro%20-%20importe%20no%20cuadra" id="ctaMidParo">Revisar mi caso por email (24-48h)</a>
+</div>
 </article>
 </div>
 </section>
@@ -452,17 +455,19 @@ window.initAdSenseSlot && window.initAdSenseSlot(document.currentScript);
 
       const primary = document.getElementById('ctaPrimaryParo');
       const secondary = document.getElementById('ctaSecondaryParo');
+      const midBtn = document.getElementById('ctaMidParo');
 
-      if (primary) {
-        primary.addEventListener('click', function () {
-          track('cta_primary_click', baseParams);
-          track('lead_form_start', baseParams);
-          if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
-            track('mailto_click', baseParams);
-            track('lead_form_submit', baseParams);
-          }
-        });
+      function trackPrimary(btn) {
+        track('cta_primary_click', Object.assign({}, baseParams, { cta_position: btn.dataset.ctaPosition || 'mid' }));
+        track('lead_form_start', baseParams);
+        if ((btn.getAttribute('href') || '').indexOf('mailto:') === 0) {
+          track('mailto_click', baseParams);
+          track('lead_form_submit', baseParams);
+        }
       }
+
+      if (primary) primary.addEventListener('click', function () { trackPrimary(primary); });
+      if (midBtn) midBtn.addEventListener('click', function () { trackPrimary(midBtn); });
 
       if (secondary) {
         secondary.addEventListener('click', function () {

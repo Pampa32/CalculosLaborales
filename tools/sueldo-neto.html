@@ -308,6 +308,11 @@ gtag('config', 'G-BEGREVBK6N');
 <p class="note" id="nota">
 Introduce tus datos para calcular una estimación de tu sueldo neto.
 </p>
+<div id="ctaResultadoNeto" style="display:none;margin-top:1rem;padding:1rem 1.25rem;background:#eef5ff;border-radius:8px;border-left:3px solid #0057b8;">
+  <p style="margin:0 0 0.6rem;font-weight:600;font-size:0.95rem;">¿Hay algo que no cuadra con tu nómina real?</p>
+  <a id="ctaInlineNetoEmail" class="btn btn-primary" href="mailto:contacto@calculoslaborales.es?subject=Revision%20IRPF%20-%20sueldo-neto" style="display:block;text-align:center;margin-bottom:0.5rem;">Revisar mi caso por email (24-48h)</a>
+  <p style="margin:0;font-size:0.8rem;color:#555;text-align:center;">Respuesta personalizada. Sin compromiso.</p>
+</div>
 </div>
 </div>
 </section>
@@ -532,17 +537,19 @@ Introduce tus datos para calcular una estimación de tu sueldo neto.
 
     const primary = document.getElementById('ctaPrimarySueldoNeto');
     const secondary = document.getElementById('ctaSecondarySueldoNeto');
+    const inlineBtn = document.getElementById('ctaInlineNetoEmail');
 
-    if (primary) {
-      primary.addEventListener('click', function () {
-        track('cta_primary_click', baseParams);
-        track('lead_form_start', baseParams);
-        if ((primary.getAttribute('href') || '').indexOf('mailto:') === 0) {
-          track('mailto_click', baseParams);
-          track('lead_form_submit', baseParams);
-        }
-      });
+    function trackPrimary(btn) {
+      track('cta_primary_click', Object.assign({}, baseParams, { cta_position: btn.dataset.ctaPosition || 'post_result' }));
+      track('lead_form_start', baseParams);
+      if ((btn.getAttribute('href') || '').indexOf('mailto:') === 0) {
+        track('mailto_click', baseParams);
+        track('lead_form_submit', baseParams);
+      }
     }
+
+    if (primary) primary.addEventListener('click', function () { trackPrimary(primary); });
+    if (inlineBtn) inlineBtn.addEventListener('click', function () { trackPrimary(inlineBtn); });
 
     if (secondary) {
       secondary.addEventListener('click', function () {
@@ -634,6 +641,14 @@ Introduce tus datos para calcular una estimación de tu sueldo neto.
     netoDisplay.textContent = neto.toFixed(2) + '€';
     
     nota.textContent = 'Resultado orientativo. Tu retención real depende de tu situación fiscal completa.';
+
+    // Mostrar CTA post-resultado con importe personalizado
+    const ctaResultado = document.getElementById('ctaResultadoNeto');
+    const ctaInline = document.getElementById('ctaInlineNetoEmail');
+    if (ctaResultado && ctaInline) {
+      ctaInline.href = 'mailto:contacto@calculoslaborales.es?subject=Revision%20IRPF%20-%20neto%20' + Math.round(neto) + 'EUR';
+      ctaResultado.style.display = 'block';
+    }
   }
 })();
 </script>
